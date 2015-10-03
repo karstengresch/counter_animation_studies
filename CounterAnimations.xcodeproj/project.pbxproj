@@ -14,6 +14,9 @@
 		3DE42D361BC072B000C3AA26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE42D341BC072B000C3AA26 /* LaunchScreen.storyboard */; };
 		3DE42D411BC072B000C3AA26 /* CounterAnimationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE42D401BC072B000C3AA26 /* CounterAnimationsTests.swift */; };
 		3DE42D4C1BC072B000C3AA26 /* CounterAnimationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE42D4B1BC072B000C3AA26 /* CounterAnimationsUITests.swift */; };
+		3DE42D5A1BC07BA200C3AA26 /* CounterAnimationsMultipleCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE42D591BC07BA200C3AA26 /* CounterAnimationsMultipleCircles.swift */; settings = {ASSET_TAGS = (); }; };
+		3DE42D5D1BC07E6C00C3AA26 /* SingleCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE42D5C1BC07E6C00C3AA26 /* SingleCircle.swift */; settings = {ASSET_TAGS = (); }; };
+		3DE42D5F1BC07F3900C3AA26 /* SingleCircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE42D5E1BC07F3900C3AA26 /* SingleCircleViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		3DE42D471BC072B000C3AA26 /* CounterAnimationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CounterAnimationsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE42D4B1BC072B000C3AA26 /* CounterAnimationsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterAnimationsUITests.swift; sourceTree = "<group>"; };
 		3DE42D4D1BC072B000C3AA26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DE42D591BC07BA200C3AA26 /* CounterAnimationsMultipleCircles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterAnimationsMultipleCircles.swift; sourceTree = "<group>"; };
+		3DE42D5C1BC07E6C00C3AA26 /* SingleCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleCircle.swift; sourceTree = "<group>"; };
+		3DE42D5E1BC07F3900C3AA26 /* SingleCircleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleCircleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,14 @@
 		3DE42D2A1BC072B000C3AA26 /* CounterAnimations */ = {
 			isa = PBXGroup;
 			children = (
+				3DE42D5B1BC07BE400C3AA26 /* MultipleCounters */,
 				3DE42D2B1BC072B000C3AA26 /* AppDelegate.swift */,
 				3DE42D2D1BC072B000C3AA26 /* ViewController.swift */,
 				3DE42D2F1BC072B000C3AA26 /* Main.storyboard */,
 				3DE42D321BC072B000C3AA26 /* Assets.xcassets */,
 				3DE42D341BC072B000C3AA26 /* LaunchScreen.storyboard */,
 				3DE42D371BC072B000C3AA26 /* Info.plist */,
+				3DE42D5E1BC07F3900C3AA26 /* SingleCircleViewController.swift */,
 			);
 			path = CounterAnimations;
 			sourceTree = "<group>";
@@ -123,6 +131,15 @@
 				3DE42D4D1BC072B000C3AA26 /* Info.plist */,
 			);
 			path = CounterAnimationsUITests;
+			sourceTree = "<group>";
+		};
+		3DE42D5B1BC07BE400C3AA26 /* MultipleCounters */ = {
+			isa = PBXGroup;
+			children = (
+				3DE42D5C1BC07E6C00C3AA26 /* SingleCircle.swift */,
+				3DE42D591BC07BA200C3AA26 /* CounterAnimationsMultipleCircles.swift */,
+			);
+			name = MultipleCounters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +272,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DE42D5A1BC07BA200C3AA26 /* CounterAnimationsMultipleCircles.swift in Sources */,
+				3DE42D5F1BC07F3900C3AA26 /* SingleCircleViewController.swift in Sources */,
+				3DE42D5D1BC07E6C00C3AA26 /* SingleCircle.swift in Sources */,
 				3DE42D2E1BC072B000C3AA26 /* ViewController.swift in Sources */,
 				3DE42D2C1BC072B000C3AA26 /* AppDelegate.swift in Sources */,
 			);
@@ -483,6 +503,7 @@
 				3DE42D521BC072B000C3AA26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3DE42D531BC072B000C3AA26 /* Build configuration list for PBXNativeTarget "CounterAnimationsTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +512,7 @@
 				3DE42D551BC072B000C3AA26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3DE42D561BC072B000C3AA26 /* Build configuration list for PBXNativeTarget "CounterAnimationsUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +521,7 @@
 				3DE42D581BC072B000C3AA26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
