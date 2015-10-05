@@ -46,7 +46,7 @@ class CircleGraphView: UIView {
       CGContextSetStrokeColorWithColor(context, arcColor.CGColor)
       
       CGContextAddArc(context, centerPoint.x, centerPoint.y, radius, start, end, 0)
-      
+      CGContextStrokePath(context)
       
       
       
