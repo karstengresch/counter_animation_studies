@@ -11,16 +11,11 @@ import UIKit
 class CircleGraphViewController: UIViewController {
 
   @IBOutlet weak var percentLabel: UILabel?
-  @IBOutlet weak var circleGraphView: CircleGraphView?
-  
-  @IBAction func slider(sender: UISlider) {
-    
-  }
-  
+
+  @IBOutlet weak var circleGraphView: CircleGraphView!
   
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -39,5 +34,13 @@ class CircleGraphViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+  
+  @IBAction func slider(sender: UISlider) {
+    print("Sender value: \(sender.value)")
+    print("End arc value: \(circleGraphView?.endArc)")
+    circleGraphView?.endArc = CGFloat(sender.value)
+    percentLabel?.text = String(format: " %5.2f %%", sender.value * 100)
+    
+  }
 
 }

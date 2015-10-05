@@ -93,7 +93,7 @@
                         <viewControllerLayoutGuide type="top" id="AWa-te-15K"/>
                         <viewControllerLayoutGuide type="bottom" id="Ls1-RH-FvV"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="1cd-AL-lfN" customClass="CircleGraphView" customModule="CounterAnimations" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="1cd-AL-lfN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -105,7 +105,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iad-bg-oOE">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iad-bg-oOE" customClass="CircleGraphView" customModule="CounterAnimations" customModuleProvider="target">
                                 <rect key="frame" x="200" y="200" width="200" height="200"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -169,7 +169,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="circleGraphView" destination="iad-bg-oOE" id="bgc-CS-K2z"/>
+                        <outlet property="circleGraphView" destination="iad-bg-oOE" id="WyY-bi-VMi"/>
                         <outlet property="percentLabel" destination="Xnv-lh-XUp" id="lyc-24-aju"/>
                     </connections>
                 </viewController>

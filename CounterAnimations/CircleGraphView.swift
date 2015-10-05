@@ -3,19 +3,49 @@
 //  CounterAnimations
 //
 //  Created by Karsten Gresch on 05.10.15.
-//  Copyright © 2015 Closure One. All rights reserved.
-//
+//  Derived w/ full Copyright attribution from: 
+//  http://makeapppie.com/2015/03/10/swift-swift-basic-core-graphics-for-the-ring-graph/
 
 import UIKit
 
+let π: CGFloat = CGFloat(M_PI)
+
+
 class CircleGraphView: UIView {
 
-
+  var endArc: CGFloat = 0.0 { // up to 1.0
+    didSet {
+      print("End arc set. Value: \(endArc)")
+      setNeedsDisplay()
+    }
+  }
+  var arcWidth: CGFloat =  10.0
+  var arcColor = UIColor(hue:0.113, saturation:0.9598, brightness:0.9717, alpha:1.0)
+  var arcBackgroundColor = UIColor(hue:0.4167, saturation:0.036, brightness:0.2124, alpha:1.0)
+  
     override func drawRect(rect: CGRect) {
-      var endArc: CGFloat = 0.0 // up to 1.0
-      var arcWidth: CGFloat =  10.0
-      var arcColor = UIColor(hue:0.113, saturation:0.9598, brightness:0.9717, alpha:1.0)
-      var arcBackgroundColor = UIColor(hue:0.4167, saturation:0.036, brightness:0.2124, alpha:1.0)
+
+      // circle defs
+      let fullCircle = 2.0 * π
+      let start: CGFloat = -0.25 * fullCircle
+      let end: CGFloat = endArc * fullCircle + start
+      // "We need a center point, an angle on the circle to start and an angle on the circle to end."
+      let centerPoint = CGPointMake(CGRectGetMidX(rect), CGRectGetMidY(rect))
+      var radius: CGFloat = 0.0
+      
+      if CGRectGetWidth(rect) > CGRectGetHeight(rect) {
+        radius = (CGRectGetWidth(rect) - arcWidth) / 2.0
+      } else {
+        radius = (CGRectGetHeight(rect) - arcWidth) / 2.0
+      }
+      
+      let context = UIGraphicsGetCurrentContext()
+      let colorspace = CGColorSpaceCreateDeviceRGB()
+      CGContextSetLineWidth(context, arcWidth)
+      CGContextSetLineCap(context, .Round)
+      CGContextSetStrokeColorWithColor(context, arcColor.CGColor)
+      
+      CGContextAddArc(context, centerPoint.x, centerPoint.y, radius, start, end, 0)
       
       
       
