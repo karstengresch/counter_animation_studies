@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D6C57811BC2FB85003DD580 /* CircleGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C57801BC2FB85003DD580 /* CircleGraphView.swift */; settings = {ASSET_TAGS = (); }; };
+		3D6C57831BC2FD2E003DD580 /* CircleGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C57821BC2FD2E003DD580 /* CircleGraphViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		3DE42D2C1BC072B000C3AA26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE42D2B1BC072B000C3AA26 /* AppDelegate.swift */; };
 		3DE42D2E1BC072B000C3AA26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE42D2D1BC072B000C3AA26 /* ViewController.swift */; };
 		3DE42D311BC072B000C3AA26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE42D2F1BC072B000C3AA26 /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D6C57801BC2FB85003DD580 /* CircleGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleGraphView.swift; sourceTree = "<group>"; };
+		3D6C57821BC2FD2E003DD580 /* CircleGraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleGraphViewController.swift; sourceTree = "<group>"; };
 		3DE42D281BC072B000C3AA26 /* CounterAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CounterAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE42D2B1BC072B000C3AA26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DE42D2D1BC072B000C3AA26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D6C577F1BC2FB66003DD580 /* CircleGraph */ = {
+			isa = PBXGroup;
+			children = (
+				3D6C57801BC2FB85003DD580 /* CircleGraphView.swift */,
+				3D6C57821BC2FD2E003DD580 /* CircleGraphViewController.swift */,
+			);
+			name = CircleGraph;
+			sourceTree = "<group>";
+		};
 		3DE42D1F1BC072B000C3AA26 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +116,7 @@
 		3DE42D2A1BC072B000C3AA26 /* CounterAnimations */ = {
 			isa = PBXGroup;
 			children = (
+				3D6C577F1BC2FB66003DD580 /* CircleGraph */,
 				3DE42D5B1BC07BE400C3AA26 /* MultipleCounters */,
 				3DE42D2B1BC072B000C3AA26 /* AppDelegate.swift */,
 				3DE42D2D1BC072B000C3AA26 /* ViewController.swift */,
@@ -273,7 +287,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DE42D5A1BC07BA200C3AA26 /* CounterAnimationsMultipleCircles.swift in Sources */,
+				3D6C57811BC2FB85003DD580 /* CircleGraphView.swift in Sources */,
 				3DE42D5F1BC07F3900C3AA26 /* SingleCircleViewController.swift in Sources */,
+				3D6C57831BC2FD2E003DD580 /* CircleGraphViewController.swift in Sources */,
 				3DE42D5D1BC07E6C00C3AA26 /* SingleCircle.swift in Sources */,
 				3DE42D2E1BC072B000C3AA26 /* ViewController.swift in Sources */,
 				3DE42D2C1BC072B000C3AA26 /* AppDelegate.swift in Sources */,

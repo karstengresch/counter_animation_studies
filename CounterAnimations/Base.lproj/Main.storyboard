@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Single Circle View Controller-->
@@ -84,25 +85,22 @@
             </objects>
             <point key="canvasLocation" x="361" y="1804"/>
         </scene>
-        <!--View Controller-->
+        <!--Circle Graph View Controller-->
         <scene sceneID="WPa-Rm-rmg">
             <objects>
-                <viewController id="1Wg-0q-3ED" sceneMemberID="viewController">
+                <viewController id="1Wg-0q-3ED" customClass="CircleGraphViewController" customModule="CounterAnimations" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AWa-te-15K"/>
                         <viewControllerLayoutGuide type="bottom" id="Ls1-RH-FvV"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="1cd-AL-lfN">
+                    <view key="view" contentMode="scaleToFill" id="1cd-AL-lfN" customClass="CircleGraphView" customModule="CounterAnimations" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Energy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50k-1G-IKv">
-                                <rect key="frame" x="20" y="86" width="268" height="24"/>
+                                <rect key="frame" x="20" y="86" width="411" height="24"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="268" id="Aau-zW-CxU"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -130,15 +128,14 @@
                                 <rect key="frame" x="18" y="461" width="564" height="31"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.85536090809999998" green="0.94339989120000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="slider:" destination="1Wg-0q-3ED" eventType="valueChanged" id="fAv-ms-Rid"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xnv-lh-XUp">
-                                <rect key="frame" x="506" y="86" width="74" height="24"/>
+                                <rect key="frame" x="443" y="86" width="137" height="24"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="74" id="IbH-or-1qT"/>
-                                    <constraint firstAttribute="width" constant="74" id="az9-Og-X5F"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -148,6 +145,7 @@
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="0.61412565490007509" green="0.86954135180816872" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="Xnv-lh-XUp" firstAttribute="width" secondItem="50k-1G-IKv" secondAttribute="width" multiplier="1:3" id="25y-PD-3jF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="rlx-5J-0Ne" secondAttribute="trailing" id="7GS-rp-vUe"/>
                             <constraint firstItem="iad-bg-oOE" firstAttribute="centerY" secondItem="1cd-AL-lfN" secondAttribute="centerY" id="Efh-os-1Jr"/>
                             <constraint firstItem="IEu-ZQ-uKy" firstAttribute="centerX" secondItem="1cd-AL-lfN" secondAttribute="centerX" id="Fyb-rQ-iP5"/>
@@ -156,6 +154,7 @@
                             <constraint firstItem="Xnv-lh-XUp" firstAttribute="top" secondItem="AWa-te-15K" secondAttribute="bottom" constant="22" id="PcJ-SK-mk8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Xnv-lh-XUp" secondAttribute="trailing" id="QaV-dt-Ex6"/>
                             <constraint firstItem="Xnv-lh-XUp" firstAttribute="bottom" secondItem="50k-1G-IKv" secondAttribute="bottom" id="Umd-rL-JDl"/>
+                            <constraint firstItem="Xnv-lh-XUp" firstAttribute="leading" secondItem="50k-1G-IKv" secondAttribute="trailing" constant="12" id="Vbq-TO-znc"/>
                             <constraint firstItem="NNK-oC-VCg" firstAttribute="top" secondItem="IEu-ZQ-uKy" secondAttribute="bottom" constant="8" id="cFI-RJ-6LU"/>
                             <constraint firstItem="rlx-5J-0Ne" firstAttribute="top" secondItem="NNK-oC-VCg" secondAttribute="bottom" constant="8" id="ccl-nR-maz"/>
                             <constraint firstAttribute="leadingMargin" secondItem="IEu-ZQ-uKy" secondAttribute="leading" id="feU-sx-Y10"/>
@@ -169,6 +168,10 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Xnv-lh-XUp" secondAttribute="trailing" id="uxD-g1-VHj"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="circleGraphView" destination="iad-bg-oOE" id="bgc-CS-K2z"/>
+                        <outlet property="percentLabel" destination="Xnv-lh-XUp" id="lyc-24-aju"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wma-L9-buX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
