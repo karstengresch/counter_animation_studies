@@ -10,12 +10,16 @@ import UIKit
 
 class CircleGraphView: UIView {
 
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
+
     override func drawRect(rect: CGRect) {
-        // Drawing code
+      var endArc: CGFloat = 0.0 // up to 1.0
+      var arcWidth: CGFloat =  10.0
+      var arcColor = UIColor(hue:0.113, saturation:0.9598, brightness:0.9717, alpha:1.0)
+      var arcBackgroundColor = UIColor(hue:0.4167, saturation:0.036, brightness:0.2124, alpha:1.0)
+      
+      
+      
+      
     }
-    */
 
 }
