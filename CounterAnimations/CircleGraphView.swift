@@ -8,7 +8,7 @@
 
 import UIKit
 
-let π: CGFloat = CGFloat(M_PI)
+
 
 
 class CircleGraphView: UIView {
@@ -40,7 +40,7 @@ class CircleGraphView: UIView {
       }
       
       let context = UIGraphicsGetCurrentContext()
-      let colorspace = CGColorSpaceCreateDeviceRGB()
+      // let colorspace = CGColorSpaceCreateDeviceRGB()
       CGContextSetLineWidth(context, arcWidth)
       CGContextSetLineCap(context, .Round)
       CGContextSetStrokeColorWithColor(context, arcColor.CGColor)

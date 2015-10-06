@@ -8,10 +8,20 @@
 
 import UIKit
 
+
+
 @IBDesignable
 class SingleCircle: UIView {
+
+  var arc: CGFloat = 0.0 { // up to 1.0
+    didSet {
+      print("End arc set. Value: \(arc)")
+      setNeedsDisplay()
+    }
+  }
+  
   override func drawRect(rect: CGRect) {
-    CounterAnimationsMultipleCircles.drawActivity(CGFloat(0.0))
+    CounterAnimationsMultipleCircles.drawActivityComposition(arc)
   }
   
 

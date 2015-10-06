@@ -128,7 +128,7 @@ public class CounterAnimationsMultipleCircles : NSObject {
 
         //// Text Drawing
         let textRect = CGRectMake(6, 25.5, 58, 19)
-        let textTextContent = NSString(string: "Player")
+        let textTextContent = NSString(string: "WTH")
         CGContextSaveGState(context)
         CGContextSetShadowWithColor(context, shadow.shadowOffset, shadow.shadowBlurRadius, (shadow.shadowColor as! UIColor).CGColor)
         let textStyle = NSParagraphStyle.defaultParagraphStyle().mutableCopy() as! NSMutableParagraphStyle
