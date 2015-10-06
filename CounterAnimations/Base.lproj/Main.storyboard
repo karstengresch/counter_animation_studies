@@ -34,14 +34,24 @@
                                     <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="AX3-od-KE7"/>
                                 </connections>
                             </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSI-Ec-Emm">
+                                <rect key="frame" x="32" y="478" width="34" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m0c-lR-VX8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="TDc-Oq-IAm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3qb-EX-aIm"/>
+                            <constraint firstItem="tvi-cx-ceF" firstAttribute="top" secondItem="fSI-Ec-Emm" secondAttribute="bottom" constant="38" id="5WM-Zl-PLg"/>
                             <constraint firstItem="tvi-cx-ceF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="8Sh-xG-Ply"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tvi-cx-ceF" secondAttribute="bottom" constant="24" id="9jx-Nx-qiV"/>
                             <constraint firstItem="TDc-Oq-IAm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fby-GS-Ov0"/>
+                            <constraint firstItem="fSI-Ec-Emm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="NON-W2-wkL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tvi-cx-ceF" secondAttribute="trailing" constant="12" id="nfF-Rd-M6u"/>
                             <constraint firstItem="tvi-cx-ceF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y8b-sW-lrD"/>
                         </constraints>

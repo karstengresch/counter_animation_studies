@@ -10,6 +10,7 @@
 		3D6C57811BC2FB85003DD580 /* CircleGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C57801BC2FB85003DD580 /* CircleGraphView.swift */; settings = {ASSET_TAGS = (); }; };
 		3D6C57831BC2FD2E003DD580 /* CircleGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C57821BC2FD2E003DD580 /* CircleGraphViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		3D6C57851BC3B86E003DD580 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C57841BC3B86E003DD580 /* GlobalConstants.swift */; settings = {ASSET_TAGS = (); }; };
+		3D6C578A1BC4532F003DD580 /* SwiftyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C57891BC4532F003DD580 /* SwiftyTimer.swift */; settings = {ASSET_TAGS = (); }; };
 		3DE42D2C1BC072B000C3AA26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE42D2B1BC072B000C3AA26 /* AppDelegate.swift */; };
 		3DE42D2E1BC072B000C3AA26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE42D2D1BC072B000C3AA26 /* ViewController.swift */; };
 		3DE42D311BC072B000C3AA26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE42D2F1BC072B000C3AA26 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		3D6C57801BC2FB85003DD580 /* CircleGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleGraphView.swift; sourceTree = "<group>"; };
 		3D6C57821BC2FD2E003DD580 /* CircleGraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleGraphViewController.swift; sourceTree = "<group>"; };
 		3D6C57841BC3B86E003DD580 /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		3D6C57891BC4532F003DD580 /* SwiftyTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyTimer.swift; sourceTree = "<group>"; };
 		3DE42D281BC072B000C3AA26 /* CounterAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CounterAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE42D2B1BC072B000C3AA26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DE42D2D1BC072B000C3AA26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				3DE42D341BC072B000C3AA26 /* LaunchScreen.storyboard */,
 				3DE42D371BC072B000C3AA26 /* Info.plist */,
 				3D6C57841BC3B86E003DD580 /* GlobalConstants.swift */,
+				3D6C57891BC4532F003DD580 /* SwiftyTimer.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D6C578A1BC4532F003DD580 /* SwiftyTimer.swift in Sources */,
 				3DE42D5A1BC07BA200C3AA26 /* CounterAnimationsMultipleCircles.swift in Sources */,
 				3D6C57811BC2FB85003DD580 /* CircleGraphView.swift in Sources */,
 				3DE42D5F1BC07F3900C3AA26 /* SingleCircleViewController.swift in Sources */,

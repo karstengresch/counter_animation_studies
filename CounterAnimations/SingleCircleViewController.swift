@@ -39,4 +39,34 @@ class SingleCircleViewController: UIViewController {
     
   }
 
+  @IBAction func startButtonPressed(sender: AnyObject) {
+    print("Start button pressed")
+ 
+    let totalTime = 12
+    
+    for var second = 0; second<=totalTime-1; second++ {
+      print("second: \(second)")
+      let currentRatio: Float = Float(second/totalTime)
+      print("Current Ratio_ \(currentRatio)")
+      
+      let timer = NSTimer.new(every: 1.seconds)
+        {
+      
+      }
+      
+      timer.start()
+      self.singleCircle?.arc = CGFloat(second/totalTime)
+
+      
+        if second == totalTime-1
+        {
+          timer.invalidate()
+          break
+      }
+      
+    }
+      
+
+    }
+  
 }
