@@ -27,15 +27,29 @@
                                     <constraint firstAttribute="width" constant="156" id="td9-FQ-rpt"/>
                                 </constraints>
                             </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="tvi-cx-ceF">
+                                <rect key="frame" x="30" y="546" width="540" height="31"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="AX3-od-KE7"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="TDc-Oq-IAm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3qb-EX-aIm"/>
+                            <constraint firstItem="tvi-cx-ceF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="8Sh-xG-Ply"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tvi-cx-ceF" secondAttribute="bottom" constant="24" id="9jx-Nx-qiV"/>
                             <constraint firstItem="TDc-Oq-IAm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fby-GS-Ov0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tvi-cx-ceF" secondAttribute="trailing" constant="12" id="nfF-Rd-M6u"/>
+                            <constraint firstItem="tvi-cx-ceF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y8b-sW-lrD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BxU-Ro-grd"/>
+                    <connections>
+                        <outlet property="singleCircle" destination="TDc-Oq-IAm" id="Tzp-kT-O3b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

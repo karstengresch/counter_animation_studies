@@ -10,6 +10,8 @@ import UIKit
 
 class SingleCircleViewController: UIViewController {
 
+  @IBOutlet weak var singleCircle: SingleCircle?
+  
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,5 +33,10 @@ class SingleCircleViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+  @IBAction func sliderChanged(sender: UISlider) {
+    singleCircle?.arc = CGFloat(sender.value)
+    
+    
+  }
 
 }
