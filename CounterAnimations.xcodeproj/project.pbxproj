@@ -11,6 +11,7 @@
 		3D6C57831BC2FD2E003DD580 /* CircleGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C57821BC2FD2E003DD580 /* CircleGraphViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		3D6C57851BC3B86E003DD580 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C57841BC3B86E003DD580 /* GlobalConstants.swift */; settings = {ASSET_TAGS = (); }; };
 		3D6C578A1BC4532F003DD580 /* SwiftyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C57891BC4532F003DD580 /* SwiftyTimer.swift */; settings = {ASSET_TAGS = (); }; };
+		3D6C578E1BC678DC003DD580 /* StopWatchPaintCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C578D1BC678DC003DD580 /* StopWatchPaintCode.swift */; settings = {ASSET_TAGS = (); }; };
 		3DE42D2C1BC072B000C3AA26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE42D2B1BC072B000C3AA26 /* AppDelegate.swift */; };
 		3DE42D2E1BC072B000C3AA26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE42D2D1BC072B000C3AA26 /* ViewController.swift */; };
 		3DE42D311BC072B000C3AA26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE42D2F1BC072B000C3AA26 /* Main.storyboard */; };
@@ -18,9 +19,12 @@
 		3DE42D361BC072B000C3AA26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE42D341BC072B000C3AA26 /* LaunchScreen.storyboard */; };
 		3DE42D411BC072B000C3AA26 /* CounterAnimationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE42D401BC072B000C3AA26 /* CounterAnimationsTests.swift */; };
 		3DE42D4C1BC072B000C3AA26 /* CounterAnimationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE42D4B1BC072B000C3AA26 /* CounterAnimationsUITests.swift */; };
-		3DE42D5A1BC07BA200C3AA26 /* CounterAnimationsMultipleCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE42D591BC07BA200C3AA26 /* CounterAnimationsMultipleCircles.swift */; settings = {ASSET_TAGS = (); }; };
+		3DE42D5A1BC07BA200C3AA26 /* SingleCirclePaintCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE42D591BC07BA200C3AA26 /* SingleCirclePaintCode.swift */; settings = {ASSET_TAGS = (); }; };
 		3DE42D5D1BC07E6C00C3AA26 /* SingleCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE42D5C1BC07E6C00C3AA26 /* SingleCircle.swift */; settings = {ASSET_TAGS = (); }; };
 		3DE42D5F1BC07F3900C3AA26 /* SingleCircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE42D5E1BC07F3900C3AA26 /* SingleCircleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		3DEA8B5C1BC6FEEB00D4ADD4 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA8B5A1BC6FEEB00D4ADD4 /* Stopwatch.swift */; settings = {ASSET_TAGS = (); }; };
+		3DEA8B5D1BC6FEEB00D4ADD4 /* StopwatchHand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA8B5B1BC6FEEB00D4ADD4 /* StopwatchHand.swift */; settings = {ASSET_TAGS = (); }; };
+		3DEA8B5F1BC701D800D4ADD4 /* StopWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA8B5E1BC701D800D4ADD4 /* StopWatchViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,7 @@
 		3D6C57821BC2FD2E003DD580 /* CircleGraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleGraphViewController.swift; sourceTree = "<group>"; };
 		3D6C57841BC3B86E003DD580 /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		3D6C57891BC4532F003DD580 /* SwiftyTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyTimer.swift; sourceTree = "<group>"; };
+		3D6C578D1BC678DC003DD580 /* StopWatchPaintCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopWatchPaintCode.swift; sourceTree = "<group>"; };
 		3DE42D281BC072B000C3AA26 /* CounterAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CounterAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE42D2B1BC072B000C3AA26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DE42D2D1BC072B000C3AA26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,9 +63,12 @@
 		3DE42D471BC072B000C3AA26 /* CounterAnimationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CounterAnimationsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE42D4B1BC072B000C3AA26 /* CounterAnimationsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterAnimationsUITests.swift; sourceTree = "<group>"; };
 		3DE42D4D1BC072B000C3AA26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3DE42D591BC07BA200C3AA26 /* CounterAnimationsMultipleCircles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterAnimationsMultipleCircles.swift; sourceTree = "<group>"; };
+		3DE42D591BC07BA200C3AA26 /* SingleCirclePaintCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleCirclePaintCode.swift; sourceTree = "<group>"; };
 		3DE42D5C1BC07E6C00C3AA26 /* SingleCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleCircle.swift; sourceTree = "<group>"; };
 		3DE42D5E1BC07F3900C3AA26 /* SingleCircleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleCircleViewController.swift; sourceTree = "<group>"; };
+		3DEA8B5A1BC6FEEB00D4ADD4 /* Stopwatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
+		3DEA8B5B1BC6FEEB00D4ADD4 /* StopwatchHand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopwatchHand.swift; sourceTree = "<group>"; };
+		3DEA8B5E1BC701D800D4ADD4 /* StopWatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopWatchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +119,27 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3D6C578B1BC678BD003DD580 /* SingleCircle */ = {
+			isa = PBXGroup;
+			children = (
+				3DE42D5C1BC07E6C00C3AA26 /* SingleCircle.swift */,
+				3DE42D5E1BC07F3900C3AA26 /* SingleCircleViewController.swift */,
+				3DE42D591BC07BA200C3AA26 /* SingleCirclePaintCode.swift */,
+			);
+			name = SingleCircle;
+			sourceTree = "<group>";
+		};
+		3D6C578C1BC678CD003DD580 /* StopWatch */ = {
+			isa = PBXGroup;
+			children = (
+				3DEA8B5A1BC6FEEB00D4ADD4 /* Stopwatch.swift */,
+				3DEA8B5B1BC6FEEB00D4ADD4 /* StopwatchHand.swift */,
+				3D6C578D1BC678DC003DD580 /* StopWatchPaintCode.swift */,
+				3DEA8B5E1BC701D800D4ADD4 /* StopWatchViewController.swift */,
+			);
+			name = StopWatch;
+			sourceTree = "<group>";
+		};
 		3DE42D1F1BC072B000C3AA26 = {
 			isa = PBXGroup;
 			children = (
@@ -135,7 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				3D6C577F1BC2FB66003DD580 /* CircleGraph */,
-				3DE42D5B1BC07BE400C3AA26 /* MultipleCounters */,
+				3DE42D5B1BC07BE400C3AA26 /* PaintCode */,
 				3D6C57861BC3B895003DD580 /* Supporting Files */,
 				3DE42D2F1BC072B000C3AA26 /* Main.storyboard */,
 			);
@@ -160,14 +189,13 @@
 			path = CounterAnimationsUITests;
 			sourceTree = "<group>";
 		};
-		3DE42D5B1BC07BE400C3AA26 /* MultipleCounters */ = {
+		3DE42D5B1BC07BE400C3AA26 /* PaintCode */ = {
 			isa = PBXGroup;
 			children = (
-				3DE42D5C1BC07E6C00C3AA26 /* SingleCircle.swift */,
-				3DE42D5E1BC07F3900C3AA26 /* SingleCircleViewController.swift */,
-				3DE42D591BC07BA200C3AA26 /* CounterAnimationsMultipleCircles.swift */,
+				3D6C578C1BC678CD003DD580 /* StopWatch */,
+				3D6C578B1BC678BD003DD580 /* SingleCircle */,
 			);
-			name = MultipleCounters;
+			name = PaintCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,13 +329,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D6C578A1BC4532F003DD580 /* SwiftyTimer.swift in Sources */,
-				3DE42D5A1BC07BA200C3AA26 /* CounterAnimationsMultipleCircles.swift in Sources */,
+				3DE42D5A1BC07BA200C3AA26 /* SingleCirclePaintCode.swift in Sources */,
 				3D6C57811BC2FB85003DD580 /* CircleGraphView.swift in Sources */,
 				3DE42D5F1BC07F3900C3AA26 /* SingleCircleViewController.swift in Sources */,
+				3DEA8B5C1BC6FEEB00D4ADD4 /* Stopwatch.swift in Sources */,
 				3D6C57831BC2FD2E003DD580 /* CircleGraphViewController.swift in Sources */,
 				3DE42D5D1BC07E6C00C3AA26 /* SingleCircle.swift in Sources */,
 				3DE42D2E1BC072B000C3AA26 /* ViewController.swift in Sources */,
+				3D6C578E1BC678DC003DD580 /* StopWatchPaintCode.swift in Sources */,
 				3D6C57851BC3B86E003DD580 /* GlobalConstants.swift in Sources */,
+				3DEA8B5D1BC6FEEB00D4ADD4 /* StopwatchHand.swift in Sources */,
+				3DEA8B5F1BC701D800D4ADD4 /* StopWatchViewController.swift in Sources */,
 				3DE42D2C1BC072B000C3AA26 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

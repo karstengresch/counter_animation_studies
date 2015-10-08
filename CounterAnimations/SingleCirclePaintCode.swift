@@ -12,7 +12,7 @@
 
 import UIKit
 
-public class CounterAnimationsMultipleCircles : NSObject {
+public class SingleCirclePaintCode : NSObject {
 
     //// Drawing Methods
 
@@ -115,7 +115,7 @@ public class CounterAnimationsMultipleCircles : NSObject {
         UIRectClip(symbolRect)
         CGContextTranslateCTM(context, symbolRect.origin.x, symbolRect.origin.y)
 
-        CounterAnimationsMultipleCircles.drawActivity(firstLevel)
+        SingleCirclePaintCode.drawActivity(firstLevel)
         CGContextRestoreGState(context)
 
         CGContextEndTransparencyLayer(context)

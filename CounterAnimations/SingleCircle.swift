@@ -21,7 +21,7 @@ class SingleCircle: UIView {
   }
   
   override func drawRect(rect: CGRect) {
-    CounterAnimationsMultipleCircles.drawActivityComposition(arc)
+    SingleCirclePaintCode.drawActivityComposition(arc)
   }
   
 
