@@ -15,7 +15,6 @@ class StopWatchViewController: UIViewController {
   
   override func viewWillAppear(animated: Bool) {
     super.viewWillAppear(animated)
-    // rotateStopWatchHand()
     
   }
   
