@@ -9,6 +9,27 @@
 import UIKit
 
 class StopWatchViewController: UIViewController {
+
+  
+  @IBOutlet weak var stopwatchHand: StopwatchHand?
+  
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+    // rotateStopWatchHand()
+    
+  }
+  
+  @IBAction func stopwatchSliderChanged(sender: UISlider) {
+    print("Stopwatch Sender value: \(sender.value)")
+    stopwatchHand?.rotation = CGFloat(sender.value * -360)
+  }
+  
+  @IBAction func rotateStopwatchHand(sender: UITapGestureRecognizer) {
+    
+    
+    
+  }
+  
   
 
 }

@@ -136,7 +136,7 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iad-bg-oOE" customClass="CircleGraphView" customModule="CounterAnimations" customModuleProvider="target">
@@ -171,7 +171,7 @@
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -246,14 +246,29 @@
                                     <constraint firstAttribute="width" constant="250" id="vFa-2X-BsV"/>
                                 </constraints>
                             </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="pd1-TA-DE9">
+                                <rect key="frame" x="18" y="513" width="564" height="31"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="stopwatchSliderChanged:" destination="boP-Ep-t6J" eventType="valueChanged" id="aNu-93-njh"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="epE-C8-RHv" firstAttribute="centerY" secondItem="FCf-Qx-GkJ" secondAttribute="centerY" id="9dg-uL-EXM"/>
+                            <constraint firstItem="pd1-TA-DE9" firstAttribute="centerX" secondItem="FCf-Qx-GkJ" secondAttribute="centerX" id="Gid-Xi-oLy"/>
                             <constraint firstItem="epE-C8-RHv" firstAttribute="centerX" secondItem="FCf-Qx-GkJ" secondAttribute="centerX" id="IFV-4o-PHk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pd1-TA-DE9" secondAttribute="trailing" id="JSp-uV-tbm"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="pd1-TA-DE9" secondAttribute="leading" id="TaU-zq-Ws3"/>
+                            <constraint firstItem="fQl-mz-VeG" firstAttribute="top" secondItem="pd1-TA-DE9" secondAttribute="bottom" constant="57" id="xiw-Za-jEH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="stopwatchHand" destination="Rof-n6-v3l" id="zd4-Rn-7mP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bwm-dY-DFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
