@@ -63,7 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1097" y="1029"/>
+            <point key="canvasLocation" x="1183" y="1029"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hVK-hd-PFC">
@@ -86,19 +86,27 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="46V-BB-bIp">
-                                <rect key="frame" x="234" y="72" width="133" height="30"/>
+                                <rect key="frame" x="207" y="72" width="187" height="30"/>
                                 <animations/>
-                                <state key="normal" title="PaintCode Example"/>
+                                <state key="normal" title="Circle Example (PaintCode)"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="juT-sz-1An"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3h9-H9-rD8">
-                                <rect key="frame" x="233" y="204" width="135" height="30"/>
+                                <rect key="frame" x="188" y="204" width="224" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Stopwatch Example"/>
+                                <state key="normal" title="Stopwatch Example (Paint Code)"/>
                                 <connections>
                                     <segue destination="boP-Ep-t6J" kind="show" id="pt7-X2-55u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhD-gb-15t">
+                                <rect key="frame" x="200.5" y="270" width="199" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Circle Example (QuartzCode)"/>
+                                <connections>
+                                    <segue destination="fPZ-1G-fQS" kind="show" id="cHe-0C-Ht2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -106,7 +114,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="3h9-H9-rD8" firstAttribute="top" secondItem="cb9-DL-zfR" secondAttribute="bottom" constant="36" id="23j-BW-rsN"/>
+                            <constraint firstItem="yhD-gb-15t" firstAttribute="top" secondItem="3h9-H9-rD8" secondAttribute="bottom" constant="36" id="5bB-AP-Gwv"/>
                             <constraint firstItem="cb9-DL-zfR" firstAttribute="centerX" secondItem="b1Q-cF-nez" secondAttribute="centerX" id="98r-ng-F9V"/>
+                            <constraint firstItem="yhD-gb-15t" firstAttribute="centerX" secondItem="b1Q-cF-nez" secondAttribute="centerX" id="Uk9-ss-obI"/>
                             <constraint firstItem="cb9-DL-zfR" firstAttribute="top" secondItem="46V-BB-bIp" secondAttribute="bottom" constant="36" id="eXw-pc-ZvO"/>
                             <constraint firstItem="46V-BB-bIp" firstAttribute="centerX" secondItem="b1Q-cF-nez" secondAttribute="centerX" id="htA-5k-jlA"/>
                             <constraint firstItem="46V-BB-bIp" firstAttribute="top" secondItem="YsE-1Y-aem" secondAttribute="bottom" constant="8" symbolic="YES" id="ioP-Y7-IAE"/>
@@ -117,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SWX-cc-O50" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="361" y="2022"/>
+            <point key="canvasLocation" x="361" y="2246"/>
         </scene>
         <!--Circle Graph View Controller-->
         <scene sceneID="WPa-Rm-rmg">
@@ -209,7 +219,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wma-L9-buX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1183" y="1829"/>
+            <point key="canvasLocation" x="1183" y="1785"/>
         </scene>
         <!--Stop Watch View Controller-->
         <scene sceneID="50X-q4-B0a">
@@ -272,7 +282,54 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bwm-dY-DFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1183" y="2550"/>
+            <point key="canvasLocation" x="1183" y="2546"/>
+        </scene>
+        <!--Two Circle Animation View Controller-->
+        <scene sceneID="585-vW-S5u">
+            <objects>
+                <viewController id="fPZ-1G-fQS" customClass="TwoCircleAnimationViewController" customModule="CounterAnimations" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WVP-ht-Vut"/>
+                        <viewControllerLayoutGuide type="bottom" id="THR-6f-CK2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Y37-CA-BQP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8md-GV-JL8" customClass="TwoCircleAnimationView" customModule="CounterAnimations" customModuleProvider="target">
+                                <rect key="frame" x="220" y="220" width="160" height="160"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="HWd-Wl-PfF"/>
+                                    <constraint firstAttribute="height" constant="160" id="uY4-sl-NsA"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJD-b5-hMW">
+                                <rect key="frame" x="283" y="523" width="34" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startTwoCircleAnimation:" destination="fPZ-1G-fQS" eventType="touchUpInside" id="ew4-Ed-vvj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8md-GV-JL8" firstAttribute="centerY" secondItem="Y37-CA-BQP" secondAttribute="centerY" id="LJs-c9-GUM"/>
+                            <constraint firstItem="THR-6f-CK2" firstAttribute="top" secondItem="qJD-b5-hMW" secondAttribute="bottom" constant="47" id="W6c-3t-bLy"/>
+                            <constraint firstItem="8md-GV-JL8" firstAttribute="centerX" secondItem="Y37-CA-BQP" secondAttribute="centerX" id="WEP-wy-EeK"/>
+                            <constraint firstItem="qJD-b5-hMW" firstAttribute="centerX" secondItem="Y37-CA-BQP" secondAttribute="centerX" id="hXA-sX-qlR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="twoCircleAnimationView" destination="8md-GV-JL8" id="GhH-am-stY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bau-ew-fLa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1183" y="3329"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Lze-Yg-xQU">
