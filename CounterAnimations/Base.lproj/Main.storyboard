@@ -155,8 +155,8 @@
                                     <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C0y-vM-rWH" customClass="CircleGraphView" customModule="CounterAnimations" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bno-g7-YaF">
-                                                <rect key="frame" x="77" y="90.5" width="46" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bno-g7-YaF">
+                                                <rect key="frame" x="64.5" y="90" width="71.5" height="20.5"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -280,6 +280,7 @@
                     <connections>
                         <outlet property="circleGraphView" destination="iad-bg-oOE" id="WyY-bi-VMi"/>
                         <outlet property="percentLabel" destination="Xnv-lh-XUp" id="lyc-24-aju"/>
+                        <outlet property="timeLabel" destination="Bno-g7-YaF" id="oDk-oU-A2n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wma-L9-buX" userLabel="First Responder" sceneMemberID="firstResponder"/>

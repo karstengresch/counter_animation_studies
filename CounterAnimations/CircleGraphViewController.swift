@@ -17,7 +17,9 @@ class CircleGraphViewController: UIViewController {
 
   @IBOutlet weak var percentLabel: UILabel?
 
-  @IBOutlet weak var circleGraphView: CircleGraphView!
+  @IBOutlet weak var timeLabel: UILabel?
+  
+  @IBOutlet weak var circleGraphView: CircleGraphView?
   
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,16 +75,49 @@ class CircleGraphViewController: UIViewController {
     lastInterval = now
     
     if(totalTime < maxTime) {
-      circleGraphView?.endArc = CGFloat(totalTime / maxTime)
-      percentLabel?.text = String(format: " %5.2f %%", totalTime / maxTime * 100)
+      let timeGone = totalTime / maxTime
+      circleGraphView?.endArc = CGFloat(timeGone)
+      percentLabel?.text = String(format: " %5.2f %%", timeGone * 100)
+      print("\(timeGone)")
+      
+      let counterTimeValues = getCounterTimeValues()
+      
+      timeLabel?.text = "\(counterTimeValues.minutes):\(counterTimeValues.seconds):\(counterTimeValues.milliseconds)"
+      
     }
     else {
       circleGraphView?.endArc = 1.0
       percentLabel?.text = "100%"
+      timeLabel?.text = String(format: "%2.2f", maxTime)
       totalTime = 0
       timer.invalidate()
     }
     
   }
+  
+  func getCounterTimeValues() -> (minutes: String, seconds: String, milliseconds: String) {
+    
+    let now = NSDate.timeIntervalSinceReferenceDate()
+    // 10-8 = 2
+    totalTime += now - lastInterval
+    // 12-10 = 2
+    lastInterval = now
+    
+    var counterTime = totalTime
+    let minutes = Int(counterTime / 60)
+    
+    counterTime -= (NSTimeInterval(minutes) * 60)
+    let minutesValue = String(format: "%02d", minutes)
+
+    let seconds = Int(counterTime)
+    counterTime -= (NSTimeInterval(seconds))
+    let secondsValue = String(format: "%02d", seconds)
+
+    let milliseconds = Int(counterTime * 100)
+    let millisecondsValue = String(format: "%02d", milliseconds)
+    
+    return (minutesValue, secondsValue, millisecondsValue)
+  }
+  
 
 }
