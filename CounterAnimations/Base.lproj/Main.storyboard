@@ -154,12 +154,23 @@
                                 <subviews>
                                     <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C0y-vM-rWH" customClass="CircleGraphView" customModule="CounterAnimations" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bno-g7-YaF">
+                                                <rect key="frame" x="77" y="90.5" width="46" height="20.5"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="4nf-d2-gtS"/>
                                             <constraint firstAttribute="height" constant="200" id="EmJ-bE-4mZ"/>
+                                            <constraint firstItem="Bno-g7-YaF" firstAttribute="centerY" secondItem="C0y-vM-rWH" secondAttribute="centerY" id="Gih-uR-61V"/>
+                                            <constraint firstItem="Bno-g7-YaF" firstAttribute="centerX" secondItem="C0y-vM-rWH" secondAttribute="centerX" id="jtR-Q1-FW7"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="arcWidth">
