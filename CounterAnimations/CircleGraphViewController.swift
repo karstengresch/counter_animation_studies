@@ -41,14 +41,14 @@ class CircleGraphViewController: UIViewController {
     */
   
   @IBAction func slider(sender: UISlider) {
-    print("Sender value: \(sender.value)")
-    print("End arc value: \(circleGraphView?.endArc)")
+    // print("Sender value: \(sender.value)")
+    // print("End arc value: \(circleGraphView?.endArc)")
     circleGraphView?.endArc = CGFloat(sender.value)
     percentLabel?.text = String(format: " %5.2f %%", sender.value * 100)
     
   }
   @IBAction func startButtonPressed(sender: AnyObject) {
-    print("Start button pressed")
+    // print("Start button pressed")
     
     circleGraphView?.endArc = 0
     

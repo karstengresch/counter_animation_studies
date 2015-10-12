@@ -157,6 +157,11 @@
                                     <constraint firstAttribute="width" constant="200" id="mG9-Mc-tbd"/>
                                     <constraint firstAttribute="height" constant="200" id="u8Y-Ly-m3T"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="arcWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="NNK-oC-VCg">
                                 <rect key="frame" x="18" y="499" width="564" height="31"/>

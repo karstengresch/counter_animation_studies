@@ -10,18 +10,20 @@ import UIKit
 
 
 
-
+@IBDesignable
 class CircleGraphView: UIView {
 
-  var endArc: CGFloat = 0.0 { // up to 1.0
+  var endArc: CGFloat = 0.5 { // up to 1.0
     didSet {
-      print("End arc set. Value: \(endArc)")
+      // print("End arc set. Value: \(endArc)")
       setNeedsDisplay()
     }
   }
-  var arcWidth: CGFloat =  10.0
-  var arcColor = UIColor(hue:0.113, saturation:0.9598, brightness:0.9717, alpha:1.0)
-  var arcBackgroundColor = UIColor(hue:0.4167, saturation:0.036, brightness:0.2124, alpha:1.0)
+  // TODO should be based on the surrounding bounds
+  
+  @IBInspectable var arcWidth: CGFloat =  10.0
+  @IBInspectable var arcColor = UIColor(hue:0.113, saturation:0.9598, brightness:0.9717, alpha:1.0)
+  @IBInspectable var arcBackgroundColor = UIColor(hue:0.4167, saturation:0.036, brightness:0.2124, alpha:1.0)
   
     override func drawRect(rect: CGRect) {
 
@@ -47,8 +49,6 @@ class CircleGraphView: UIView {
       
       CGContextAddArc(context, centerPoint.x, centerPoint.y, radius, start, end, 0)
       CGContextStrokePath(context)
-      
-      
       
     }
 
