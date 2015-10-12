@@ -184,12 +184,20 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KK0-SM-Oga">
+                                <rect key="frame" x="28" y="288" width="30" height="24"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <state key="normal" title="Start"/>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="0.61412565490007509" green="0.86954135180816872" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Xnv-lh-XUp" firstAttribute="width" secondItem="50k-1G-IKv" secondAttribute="width" multiplier="1:3" id="25y-PD-3jF"/>
+                            <constraint firstItem="iad-bg-oOE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="KK0-SM-Oga" secondAttribute="trailing" constant="8" id="4Co-5W-vtg"/>
+                            <constraint firstItem="KK0-SM-Oga" firstAttribute="centerY" secondItem="1cd-AL-lfN" secondAttribute="centerY" id="5c5-0M-hbc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="rlx-5J-0Ne" secondAttribute="trailing" id="7GS-rp-vUe"/>
                             <constraint firstItem="iad-bg-oOE" firstAttribute="centerY" secondItem="1cd-AL-lfN" secondAttribute="centerY" id="Efh-os-1Jr"/>
                             <constraint firstItem="IEu-ZQ-uKy" firstAttribute="centerX" secondItem="1cd-AL-lfN" secondAttribute="centerX" id="Fyb-rQ-iP5"/>
@@ -205,6 +213,7 @@
                             <constraint firstAttribute="leadingMargin" secondItem="NNK-oC-VCg" secondAttribute="leading" id="hig-pR-LeD"/>
                             <constraint firstAttribute="leadingMargin" secondItem="rlx-5J-0Ne" secondAttribute="leading" id="jih-9Q-6fk"/>
                             <constraint firstAttribute="leadingMargin" secondItem="50k-1G-IKv" secondAttribute="leading" id="kNQ-ZI-UJn"/>
+                            <constraint firstItem="KK0-SM-Oga" firstAttribute="leading" secondItem="1cd-AL-lfN" secondAttribute="leadingMargin" constant="8" id="oKd-gf-Km6"/>
                             <constraint firstItem="NNK-oC-VCg" firstAttribute="centerX" secondItem="1cd-AL-lfN" secondAttribute="centerX" id="obl-ca-Vtb"/>
                             <constraint firstItem="iad-bg-oOE" firstAttribute="centerX" secondItem="1cd-AL-lfN" secondAttribute="centerX" id="rgQ-HD-fBv"/>
                             <constraint firstItem="50k-1G-IKv" firstAttribute="top" secondItem="AWa-te-15K" secondAttribute="bottom" constant="22" id="rxj-5m-v0n"/>
