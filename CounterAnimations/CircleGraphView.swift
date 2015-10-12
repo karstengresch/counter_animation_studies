@@ -13,7 +13,7 @@ import UIKit
 @IBDesignable
 class CircleGraphView: UIView {
 
-  var endArc: CGFloat = 0.5 { // up to 1.0
+  @IBInspectable var endArc: CGFloat = 0.5 { // up to 1.0
     didSet {
       // print("End arc set. Value: \(endArc)")
       setNeedsDisplay()
