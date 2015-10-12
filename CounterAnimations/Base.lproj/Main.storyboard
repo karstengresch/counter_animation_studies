@@ -189,6 +189,9 @@
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startButtonPressed:" destination="1Wg-0q-3ED" eventType="touchUpInside" id="Uqq-36-i2A"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
