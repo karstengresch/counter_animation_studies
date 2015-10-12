@@ -78,6 +78,7 @@ class CircleGraphViewController: UIViewController {
     }
     else {
       circleGraphView?.endArc = 1.0
+      percentLabel?.text = "100%"
       totalTime = 0
       timer.invalidate()
     }
