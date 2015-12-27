@@ -8,7 +8,13 @@
 
 import UIKit
 
+protocol CircleGraphViewControllerDelegate: class {
+  
+}
+
 class CircleGraphViewController: UIViewController {
+  
+  weak var delegate: CircleGraphViewControllerDelegate?
   
   var lastInterval = NSTimeInterval()
   var timer = NSTimer()
