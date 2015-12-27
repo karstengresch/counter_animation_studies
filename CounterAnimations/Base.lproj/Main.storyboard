@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="I1a-eX-MxM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="I1a-eX-MxM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -20,7 +20,6 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TDc-Oq-IAm" customClass="SingleCircle" customModule="CounterAnimations" customModuleProvider="target">
                                 <rect key="frame" x="222" y="203" width="156" height="194"/>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="194" id="rJB-pv-sEQ"/>
@@ -29,21 +28,18 @@
                             </view>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="tvi-cx-ceF">
                                 <rect key="frame" x="30" y="546" width="540" height="31"/>
-                                <animations/>
                                 <connections>
                                     <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="AX3-od-KE7"/>
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSI-Ec-Emm">
                                 <rect key="frame" x="32" y="478" width="34" height="30"/>
-                                <animations/>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="startButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m0c-lR-VX8"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="TDc-Oq-IAm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3qb-EX-aIm"/>
@@ -79,7 +75,6 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cb9-DL-zfR">
                                 <rect key="frame" x="216" y="138" width="169" height="30"/>
-                                <animations/>
                                 <state key="normal" title="Making App Pie Example"/>
                                 <connections>
                                     <segue destination="1Wg-0q-3ED" kind="show" id="jZv-aH-kek"/>
@@ -87,7 +82,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="46V-BB-bIp">
                                 <rect key="frame" x="207" y="72" width="187" height="30"/>
-                                <animations/>
                                 <state key="normal" title="Circle Example (PaintCode)"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="juT-sz-1An"/>
@@ -95,7 +89,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3h9-H9-rD8">
                                 <rect key="frame" x="188" y="204" width="224" height="30"/>
-                                <animations/>
                                 <state key="normal" title="Stopwatch Example (Paint Code)"/>
                                 <connections>
                                     <segue destination="boP-Ep-t6J" kind="show" id="pt7-X2-55u"/>
@@ -103,14 +96,12 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhD-gb-15t">
                                 <rect key="frame" x="200.5" y="270" width="199" height="30"/>
-                                <animations/>
                                 <state key="normal" title="Circle Example (QuartzCode)"/>
                                 <connections>
                                     <segue destination="fPZ-1G-fQS" kind="show" id="cHe-0C-Ht2"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="3h9-H9-rD8" firstAttribute="top" secondItem="cb9-DL-zfR" secondAttribute="bottom" constant="36" id="23j-BW-rsN"/>
@@ -143,7 +134,6 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Energy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50k-1G-IKv">
                                 <rect key="frame" x="20" y="86" width="411" height="24"/>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -154,23 +144,11 @@
                                 <subviews>
                                     <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C0y-vM-rWH" customClass="CircleGraphView" customModule="CounterAnimations" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
-                                        <subviews>
-                                            <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bno-g7-YaF">
-                                                <rect key="frame" x="64.5" y="90" width="71.5" height="20.5"/>
-                                                <animations/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="4nf-d2-gtS"/>
                                             <constraint firstAttribute="height" constant="200" id="EmJ-bE-4mZ"/>
-                                            <constraint firstItem="Bno-g7-YaF" firstAttribute="centerY" secondItem="C0y-vM-rWH" secondAttribute="centerY" id="Gih-uR-61V"/>
-                                            <constraint firstItem="Bno-g7-YaF" firstAttribute="centerX" secondItem="C0y-vM-rWH" secondAttribute="centerX" id="jtR-Q1-FW7"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="arcWidth">
@@ -187,14 +165,22 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u80-db-FdJ">
+                                        <rect key="frame" x="50" y="50" width="100" height="100"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="u80-db-FdJ" firstAttribute="height" secondItem="C0y-vM-rWH" secondAttribute="height" multiplier="0.5" id="DUv-bu-ZeD"/>
+                                    <constraint firstItem="u80-db-FdJ" firstAttribute="centerX" secondItem="C0y-vM-rWH" secondAttribute="centerX" id="NR7-aQ-MTo"/>
                                     <constraint firstAttribute="width" constant="200" id="mG9-Mc-tbd"/>
                                     <constraint firstItem="C0y-vM-rWH" firstAttribute="centerX" secondItem="iad-bg-oOE" secondAttribute="centerX" id="tb9-IX-d9e"/>
+                                    <constraint firstItem="u80-db-FdJ" firstAttribute="centerY" secondItem="C0y-vM-rWH" secondAttribute="centerY" id="tk9-g7-shW"/>
                                     <constraint firstAttribute="height" constant="200" id="u8Y-Ly-m3T"/>
                                     <constraint firstItem="C0y-vM-rWH" firstAttribute="centerY" secondItem="iad-bg-oOE" secondAttribute="centerY" id="usi-oa-k96"/>
+                                    <constraint firstItem="u80-db-FdJ" firstAttribute="width" secondItem="C0y-vM-rWH" secondAttribute="width" multiplier="0.5" id="w8h-gl-nfg"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="arcWidth">
@@ -213,17 +199,14 @@
                             </view>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="NNK-oC-VCg">
                                 <rect key="frame" x="18" y="499" width="564" height="31"/>
-                                <animations/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.53333333329999999" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rlx-5J-0Ne">
                                 <rect key="frame" x="18" y="537" width="564" height="31"/>
-                                <animations/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="IEu-ZQ-uKy">
                                 <rect key="frame" x="18" y="461" width="564" height="31"/>
-                                <animations/>
                                 <color key="backgroundColor" red="0.85536090809999998" green="0.94339989120000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="slider:" destination="1Wg-0q-3ED" eventType="valueChanged" id="fAv-ms-Rid"/>
@@ -231,7 +214,6 @@
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xnv-lh-XUp">
                                 <rect key="frame" x="443" y="86" width="137" height="24"/>
-                                <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -239,7 +221,6 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KK0-SM-Oga">
                                 <rect key="frame" x="28" y="288" width="30" height="24"/>
-                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
@@ -247,7 +228,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="0.61412565490007509" green="0.86954135180816872" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -280,7 +260,6 @@
                     <connections>
                         <outlet property="circleGraphView" destination="iad-bg-oOE" id="WyY-bi-VMi"/>
                         <outlet property="percentLabel" destination="Xnv-lh-XUp" id="lyc-24-aju"/>
-                        <outlet property="timeLabel" destination="Bno-g7-YaF" id="oDk-oU-A2n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wma-L9-buX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -304,7 +283,6 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rof-n6-v3l" customClass="StopwatchHand" customModule="CounterAnimations" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="37" width="250" height="222"/>
-                                        <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -313,7 +291,6 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="4Dy-b3-3cM"/>
@@ -324,13 +301,11 @@
                             </view>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="pd1-TA-DE9">
                                 <rect key="frame" x="18" y="513" width="564" height="31"/>
-                                <animations/>
                                 <connections>
                                     <action selector="stopwatchSliderChanged:" destination="boP-Ep-t6J" eventType="valueChanged" id="aNu-93-njh"/>
                                 </connections>
                             </slider>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
@@ -364,7 +339,6 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8md-GV-JL8" customClass="TwoCircleAnimationView" customModule="CounterAnimations" customModuleProvider="target">
                                 <rect key="frame" x="220" y="220" width="160" height="160"/>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="HWd-Wl-PfF"/>
@@ -373,14 +347,12 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJD-b5-hMW">
                                 <rect key="frame" x="283" y="523" width="34" height="30"/>
-                                <animations/>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="startTwoCircleAnimation:" destination="fPZ-1G-fQS" eventType="touchUpInside" id="ew4-Ed-vvj"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="8md-GV-JL8" firstAttribute="centerY" secondItem="Y37-CA-BQP" secondAttribute="centerY" id="LJs-c9-GUM"/>
@@ -405,7 +377,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="axG-y8-U9g">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
