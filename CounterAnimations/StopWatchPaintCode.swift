@@ -31,6 +31,7 @@ public class StopWatchPaintCode : NSObject {
     public class func drawStopwatch() {
 
         //// Oval Drawing
+        // TODO Should be created dynamically based on superview or constraints
         let ovalPath = UIBezierPath(ovalInRect: CGRectMake(15, 30, 220, 220))
         StopWatchPaintCode.color.setFill()
         ovalPath.fill()

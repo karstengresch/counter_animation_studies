@@ -59,6 +59,7 @@ class TwoCircleAnimationView: UIView {
   
   func setupLayers(){
     let Circle = CAShapeLayer()
+    // TODO: Initialize statically or based on constraints
     Circle.frame = CGRectMake(40, 40, 80, 80)
     Circle.path = CirclePath().CGPath;
     self.layer.addSublayer(Circle)
