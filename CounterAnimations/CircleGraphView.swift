@@ -29,6 +29,7 @@ class CircleGraphView: UIView {
   var totalTime = NSTimeInterval()
   let maxTime: Double = 12.0
   var isRunning = false
+  var wasStopped = false
 
 
   
@@ -68,22 +69,37 @@ class CircleGraphView: UIView {
   
   @IBAction func buttonPressed(sender: AnyObject) {
     // print("Start button pressed")
-    isRunning = isRunning ? false : true
     
-    endArc = 0
     
-    if !timer.valid {
-      let selector: Selector = "updateCounter"
-      timer = NSTimer.scheduledTimerWithTimeInterval(0.01,
-        target: self,
-        selector: selector,
-        userInfo: nil,
-        repeats: true)
-      lastInterval = NSDate.timeIntervalSinceReferenceDate()
+    if ( !isRunning )
+    {
+      if !wasStopped {
+       endArc = 0
+      } else {
+       lastInterval = NSDate.timeIntervalSinceReferenceDate()
+      }
+      
+      if !timer.valid {
+        let selector: Selector = "updateCounter"
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.01,
+          target: self,
+          selector: selector,
+          userInfo: nil,
+          repeats: true)
+        lastInterval = NSDate.timeIntervalSinceReferenceDate()
+      } else {
+        timer.invalidate()
+        let timeGone = totalTime / maxTime
+        endArc = CGFloat(timeGone)
+        wasStopped = true
+      }
     } else {
-      endArc = 1.0
-      timer.invalidate()
+      
+      
+      
     }
+    
+    isRunning = isRunning ? false : true
   }
   
   func updateCounter() {
