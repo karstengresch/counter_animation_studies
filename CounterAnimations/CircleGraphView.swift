@@ -23,6 +23,7 @@ class CircleGraphView: UIView {
   @IBInspectable var arcWidth: CGFloat =  10.0
   @IBInspectable var arcColor: UIColor = UIColor(hue:0.113, saturation:0.9598, brightness:0.9717, alpha:1.0)
   @IBInspectable var arcBackgroundColor: UIColor = UIColor(hue:0.4167, saturation:0.036, brightness:0.2124, alpha:1.0)
+
   
     override func drawRect(rect: CGRect) {
 
@@ -48,7 +49,13 @@ class CircleGraphView: UIView {
       
       CGContextAddArc(context, centerPoint.x, centerPoint.y, radius, start, end, 0)
       CGContextStrokePath(context)
+
       
     }
+  
+  override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+      print("Circle Graph: touches ended")
+
+  }
 
 }

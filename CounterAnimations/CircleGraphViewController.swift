@@ -27,6 +27,8 @@ class CircleGraphViewController: UIViewController {
   
   @IBOutlet weak var circleGraphView: CircleGraphView?
   
+  
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -124,6 +126,11 @@ class CircleGraphViewController: UIViewController {
     let millisecondsValue = String(format: "%02d", milliseconds)
     
     return (minutesValue, secondsValue, millisecondsValue)
+  }
+  
+  // MARK: IB related
+  @IBAction func cancel() {
+    dismissViewControllerAnimated(true, completion: nil)
   }
   
 
