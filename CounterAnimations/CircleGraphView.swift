@@ -23,6 +23,13 @@ class CircleGraphView: UIView {
   @IBInspectable var arcWidth: CGFloat =  10.0
   @IBInspectable var arcColor: UIColor = UIColor(hue:0.113, saturation:0.9598, brightness:0.9717, alpha:1.0)
   @IBInspectable var arcBackgroundColor: UIColor = UIColor(hue:0.4167, saturation:0.036, brightness:0.2124, alpha:1.0)
+  
+  var lastInterval = NSTimeInterval()
+  var timer = NSTimer()
+  var totalTime = NSTimeInterval()
+  let maxTime: Double = 12.0
+  var isRunning = false
+
 
   
     override func drawRect(rect: CGRect) {
@@ -55,7 +62,80 @@ class CircleGraphView: UIView {
   
   override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
       print("Circle Graph: touches ended")
+    buttonPressed(self)
 
+  }
+  
+  @IBAction func buttonPressed(sender: AnyObject) {
+    // print("Start button pressed")
+    isRunning = isRunning ? false : true
+    
+    endArc = 0
+    
+    if !timer.valid {
+      let selector: Selector = "updateCounter"
+      timer = NSTimer.scheduledTimerWithTimeInterval(0.01,
+        target: self,
+        selector: selector,
+        userInfo: nil,
+        repeats: true)
+      lastInterval = NSDate.timeIntervalSinceReferenceDate()
+    } else {
+      endArc = 1.0
+      timer.invalidate()
+    }
+  }
+  
+  func updateCounter() {
+    
+    let now = NSDate.timeIntervalSinceReferenceDate()
+    totalTime += now - lastInterval
+    lastInterval = now
+    
+    if(totalTime < maxTime) {
+      let timeGone = totalTime / maxTime
+      endArc = CGFloat(timeGone)
+      // percentLabel?.text = String(format: " %5.2f %%", timeGone * 100)
+      print("\(timeGone)")
+      
+      // let counterTimeValues = getCounterTimeValues()
+      // timeLabel?.text = "\(counterTimeValues.minutes):\(counterTimeValues.seconds):\(counterTimeValues.milliseconds)"
+      
+    }
+    else {
+      endArc = 1.0
+      // percentLabel?.text = "100%"
+      // timeLabel?.text = String(format: "%2.2f", maxTime)
+      // let counterTimeValues = getCounterTimeValues()
+      // timeLabel?.text = "\(counterTimeValues.minutes):\(counterTimeValues.seconds):00"
+      totalTime = 0
+      timer.invalidate()
+    }
+    
+  }
+  
+  func getCounterTimeValues() -> (minutes: String, seconds: String, milliseconds: String) {
+    
+    let now = NSDate.timeIntervalSinceReferenceDate()
+    // 10-8 = 2
+    totalTime += now - lastInterval
+    // 12-10 = 2
+    lastInterval = now
+    
+    var counterTime = totalTime
+    let minutes = Int(counterTime / 60)
+    
+    counterTime -= (NSTimeInterval(minutes) * 60)
+    let minutesValue = String(format: "%02d", minutes)
+    
+    let seconds = Int(counterTime)
+    counterTime -= (NSTimeInterval(seconds))
+    let secondsValue = String(format: "%02d", seconds)
+    
+    let milliseconds = Int(counterTime * 100)
+    let millisecondsValue = String(format: "%02d", milliseconds)
+    
+    return (minutesValue, secondsValue, millisecondsValue)
   }
 
 }
