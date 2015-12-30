@@ -81,6 +81,7 @@ class CircleGraphView: UIView {
       }
       
       if !timer.valid {
+        print("Circle Graph View: Timer was NOT valid and was NOT running")
         let selector: Selector = "updateCounter"
         timer = NSTimer.scheduledTimerWithTimeInterval(0.01,
           target: self,
@@ -89,14 +90,16 @@ class CircleGraphView: UIView {
           repeats: true)
         lastInterval = NSDate.timeIntervalSinceReferenceDate()
       } else {
+        print("Circle Graph View: Timer >>was<< valid and was NOT running")
         timer.invalidate()
         let timeGone = totalTime / maxTime
         endArc = CGFloat(timeGone)
         wasStopped = true
       }
     } else {
-      print("Circle Graph View: was running")
+      print("Circle Graph View: >>was<< running")
       if !timer.valid {
+        print("Circle Graph View: Timer was NOT valid and >>was<< running")
         let selector: Selector = "updateCounter"
         timer = NSTimer.scheduledTimerWithTimeInterval(0.01,
           target: self,
@@ -105,6 +108,7 @@ class CircleGraphView: UIView {
           repeats: true)
         lastInterval = NSDate.timeIntervalSinceReferenceDate()
       } else {
+        print("Circle Graph View: Timer >>was<< valid and >>was<< running")
         timer.invalidate()
         let timeGone = totalTime / maxTime
         endArc = CGFloat(timeGone)
