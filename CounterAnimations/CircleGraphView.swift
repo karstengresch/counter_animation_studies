@@ -62,17 +62,18 @@ class CircleGraphView: UIView {
     }
   
   override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-      print("Circle Graph: touches ended")
+      print("Circle Graph View: Touches ended")
     buttonPressed(self)
 
   }
   
   @IBAction func buttonPressed(sender: AnyObject) {
-    // print("Start button pressed")
+    print("Circle Graph View: Button pressed")
     
     
     if ( !isRunning )
     {
+      print("Circle Graph View: was NOT running")
       if !wasStopped {
        endArc = 0
       } else {
@@ -94,9 +95,21 @@ class CircleGraphView: UIView {
         wasStopped = true
       }
     } else {
-      
-      
-      
+      print("Circle Graph View: was running")
+      if !timer.valid {
+        let selector: Selector = "updateCounter"
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.01,
+          target: self,
+          selector: selector,
+          userInfo: nil,
+          repeats: true)
+        lastInterval = NSDate.timeIntervalSinceReferenceDate()
+      } else {
+        timer.invalidate()
+        let timeGone = totalTime / maxTime
+        endArc = CGFloat(timeGone)
+        wasStopped = true
+      }
     }
     
     isRunning = isRunning ? false : true
@@ -112,7 +125,7 @@ class CircleGraphView: UIView {
       let timeGone = totalTime / maxTime
       endArc = CGFloat(timeGone)
       // percentLabel?.text = String(format: " %5.2f %%", timeGone * 100)
-      print("\(timeGone)")
+      // print("\(timeGone)")
       
       // let counterTimeValues = getCounterTimeValues()
       // timeLabel?.text = "\(counterTimeValues.minutes):\(counterTimeValues.seconds):\(counterTimeValues.milliseconds)"
