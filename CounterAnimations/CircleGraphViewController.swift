@@ -76,6 +76,9 @@ class CircleGraphViewController: UIViewController {
     }
   }
   
+  
+  // HERE I AM
+  
   func updateCounter() {
     
     let now = NSDate.timeIntervalSinceReferenceDate()

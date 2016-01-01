@@ -24,6 +24,8 @@ class CircleGraphView: UIView {
   @IBInspectable var arcColor: UIColor = UIColor(hue:0.113, saturation:0.9598, brightness:0.9717, alpha:1.0)
   @IBInspectable var arcBackgroundColor: UIColor = UIColor(hue:0.4167, saturation:0.036, brightness:0.2124, alpha:1.0)
   
+  
+  
   var lastInterval = NSTimeInterval()
   var timer = NSTimer()
   var totalTime = NSTimeInterval()
@@ -88,7 +90,7 @@ class CircleGraphView: UIView {
           selector: selector,
           userInfo: nil,
           repeats: true)
-        lastInterval = NSDate.timeIntervalSinceReferenceDate()
+          lastInterval = NSDate.timeIntervalSinceReferenceDate()
       } else {
         print("Circle Graph View: Timer >>was<< valid and was NOT running")
         timer.invalidate()
@@ -119,6 +121,7 @@ class CircleGraphView: UIView {
     isRunning = isRunning ? false : true
   }
   
+  // TODO: Check reference day as parameter!
   func updateCounter() {
     
     let now = NSDate.timeIntervalSinceReferenceDate()
