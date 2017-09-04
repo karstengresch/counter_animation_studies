@@ -12,6 +12,8 @@
 		3DBD49961F5DE79D0087ED71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBD49941F5DE79D0087ED71 /* Main.storyboard */; };
 		3DBD49981F5DE79D0087ED71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DBD49971F5DE79D0087ED71 /* Assets.xcassets */; };
 		3DBD499B1F5DE79D0087ED71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBD49991F5DE79D0087ED71 /* LaunchScreen.storyboard */; };
+		3DBD49A51F5DE9FE0087ED71 /* Graph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBD49A41F5DE9FE0087ED71 /* Graph.framework */; };
+		3DBD49A71F5DEA040087ED71 /* Material.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBD49A61F5DEA040087ED71 /* Material.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		3DBD49971F5DE79D0087ED71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DBD499A1F5DE79D0087ED71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DBD499C1F5DE79D0087ED71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DBD49A41F5DE9FE0087ED71 /* Graph.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Graph.framework; path = Carthage/Build/iOS/Graph.framework; sourceTree = "<group>"; };
+		3DBD49A61F5DEA040087ED71 /* Material.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Material.framework; path = Carthage/Build/iOS/Material.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DBD49A51F5DE9FE0087ED71 /* Graph.framework in Frameworks */,
+				3DBD49A71F5DEA040087ED71 /* Material.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,7 @@
 			children = (
 				3DBD498F1F5DE79D0087ED71 /* GraphL10n */,
 				3DBD498E1F5DE79D0087ED71 /* Products */,
+				3DBD49A31F5DE9FE0087ED71 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,15 @@
 			path = GraphL10n;
 			sourceTree = "<group>";
 		};
+		3DBD49A31F5DE9FE0087ED71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DBD49A61F5DEA040087ED71 /* Material.framework */,
+				3DBD49A41F5DE9FE0087ED71 /* Graph.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +90,7 @@
 				3DBD49891F5DE79D0087ED71 /* Sources */,
 				3DBD498A1F5DE79D0087ED71 /* Frameworks */,
 				3DBD498B1F5DE79D0087ED71 /* Resources */,
+				3DBD49A21F5DE9B50087ED71 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -131,6 +148,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3DBD49A21F5DE9B50087ED71 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"",
+				"$(SRCROOT)/Carthage/Build/iOS/Graph.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Material.framework",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Graph.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Material.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3DBD49891F5DE79D0087ED71 /* Sources */ = {
@@ -264,6 +302,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BD2TPDQG5D;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GraphL10n/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tr.youts.GraphL10n;
@@ -277,6 +319,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BD2TPDQG5D;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GraphL10n/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tr.youts.GraphL10n;
