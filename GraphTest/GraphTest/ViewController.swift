@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  GraphL10n
+//  GraphTest
 //
 //  Created by Karsten Gresch on 04.09.17.
 //  Copyright © 2017 Funny Tryouts. All rights reserved.

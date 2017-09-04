@@ -21,7 +21,7 @@ class SideMenuYarlanisViewController: UIViewController, UITableViewDelegate {
         // Dispose of any resources that can be recreated.
     }
   
-  func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     //
   }
   

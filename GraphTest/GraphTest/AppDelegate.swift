@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  GraphL10n
+//  GraphTest
 //
 //  Created by Karsten Gresch on 04.09.17.
 //  Copyright © 2017 Funny Tryouts. All rights reserved.
@@ -14,8 +14,6 @@ import Graph
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
-  
-  
 
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
