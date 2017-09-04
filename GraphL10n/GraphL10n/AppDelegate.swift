@@ -7,15 +7,38 @@
 //
 
 import UIKit
+import Material
+import Graph
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
+  
+  
 
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
+    SampleData.createSampleData()
+    
+    let graph = Graph()
+    let search = Search<Entity>(graph: graph).for(types: "Category")
+    
+    var viewControllers = [PostsViewController]()
+    
+    for category in search.sync() {
+      if let name = category["name"] as? String {
+        viewControllers.append(PostsViewController(category: name))
+      }
+    }
+    
+    let tabsController = AppTabsController(viewControllers: viewControllers)
+    let toolbarController = AppToolbarController(rootViewController: tabsController)
+    let menuController = AppFABMenuController(rootViewController: toolbarController)
+    
+    window = UIWindow(frame: Screen.bounds)
+    window!.rootViewController = menuController
+    window!.makeKeyAndVisible()
     return true
   }
 
