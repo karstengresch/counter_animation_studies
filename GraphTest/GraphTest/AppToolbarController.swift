@@ -70,8 +70,10 @@ extension AppToolbarController {
     fileprivate func prepareToolbar() {
         toolbar.depthPreset = .none
         toolbar.backgroundColor = Color.blue.darken2
+        let titleString = NSLocalizedString("DummyBummy", comment: "")
+      print("DummyBummy: \(titleString)")
         
-        toolbar.title = "HealthyMind"
+        toolbar.title = titleString
         toolbar.titleLabel.textColor = .white
         toolbar.titleLabel.textAlignment = .left
         

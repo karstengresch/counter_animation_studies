@@ -47,10 +47,10 @@ struct SampleData {
         c1["name"] = "Yoga"
         
         let a1 = Entity(type: "Article")
-        a1["title"] = "Anti-Stress Yoga"
+        a1["title"] = NSLocalizedString("Anti-Stress Yoga", comment: "")
         a1["detail"] = "facebook.com/healthymind.io"
         a1["photo"] = UIImage.load(contentsOfFile: "photo1", ofType: "jpg")?.resize(toHeight: 300)
-        a1["content"] = "Yoga is a wonderful practice for your body and soul. It benefits you tremendously in physical and mental ways. I'd like to point out that yoga practice is mainly for your mind, rather than your body."
+      a1["content"] = NSLocalizedString("Article-Anti-Stress-Yoga", comment: "")
         
         a1.is(relationship: "Post").in(object: c1)
         
