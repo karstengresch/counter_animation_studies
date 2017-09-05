@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3DBD49EC1F5DF8B10087ED71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBD49EB1F5DF8B10087ED71 /* AppDelegate.swift */; };
-		3DBD49EE1F5DF8B10087ED71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBD49ED1F5DF8B10087ED71 /* ViewController.swift */; };
 		3DBD49F11F5DF8B10087ED71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBD49EF1F5DF8B10087ED71 /* Main.storyboard */; };
 		3DBD49F31F5DF8B10087ED71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DBD49F21F5DF8B10087ED71 /* Assets.xcassets */; };
 		3DBD49F61F5DF8B10087ED71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBD49F41F5DF8B10087ED71 /* LaunchScreen.storyboard */; };
@@ -35,7 +34,6 @@
 /* Begin PBXFileReference section */
 		3DBD49E81F5DF8B10087ED71 /* GraphTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DBD49EB1F5DF8B10087ED71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3DBD49ED1F5DF8B10087ED71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3DBD49F01F5DF8B10087ED71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3DBD49F21F5DF8B10087ED71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DBD49F51F5DF8B10087ED71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -104,10 +102,9 @@
 				3DBD4A051F5DFB530087ED71 /* AppToolbarController.swift */,
 				3DBD4A061F5DFB530087ED71 /* CardTableView.swift */,
 				3DBD4A071F5DFB530087ED71 /* CardTableViewCell.swift */,
-				3DBD4A211F5E9F450087ED71 /* Photos */,
 				3DBD4A101F5DFB530087ED71 /* PostsViewController.swift */,
+				3DBD4A211F5E9F450087ED71 /* Photos */,
 				3DBD4A111F5DFB530087ED71 /* SampleData.swift */,
-				3DBD49ED1F5DF8B10087ED71 /* ViewController.swift */,
 				3DBD49F21F5DF8B10087ED71 /* Assets.xcassets */,
 				3DBD49F71F5DF8B10087ED71 /* Info.plist */,
 				3DBD4A291F5E9FBE0087ED71 /* Localizable.strings */,
@@ -252,7 +249,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DBD49EE1F5DF8B10087ED71 /* ViewController.swift in Sources */,
 				3DBD4A151F5DFB530087ED71 /* CardTableView.swift in Sources */,
 				3DBD4A131F5DFB530087ED71 /* AppTabBarController.swift in Sources */,
 				3DBD49EC1F5DF8B10087ED71 /* AppDelegate.swift in Sources */,

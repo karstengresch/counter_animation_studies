@@ -64,6 +64,7 @@ class CardTableView: UITableView {
         backgroundColor = nil
         
         register(CardTableViewCell.self, forCellReuseIdentifier: "CardTableViewCell")
+        print("CardTableViewCell prepared")
     }
 }
 

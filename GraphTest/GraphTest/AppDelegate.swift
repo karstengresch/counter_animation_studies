@@ -26,6 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     for category in search.sync() {
       if let name = category["name"] as? String {
+        print("Category name: \(name)")
         viewControllers.append(PostsViewController(category: name))
       }
     }

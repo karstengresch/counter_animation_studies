@@ -34,7 +34,7 @@ import Graph
 
 extension UIImage {
     public class func load(contentsOfFile name: String, ofType type: String) -> UIImage? {
-        return UIImage(contentsOfFile: Bundle.main.path(forResource: name, ofType: type)!)
+	        return UIImage(contentsOfFile: Bundle.main.path(forResource: name, ofType: type)!)
     }
 }
 
