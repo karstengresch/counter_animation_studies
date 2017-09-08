@@ -94,6 +94,7 @@ extension PostsViewController {
     
     internal func prepareSearch() {
         search = Search<Entity>(graph: graph).for(types: "Category").where(properties: ("name", category))
+        print("search - found: \(search.sync().count)")
     }
 }
 
