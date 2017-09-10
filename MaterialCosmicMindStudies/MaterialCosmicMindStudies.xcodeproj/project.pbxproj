@@ -11,6 +11,10 @@
 		3D28CED11F65CA9800A1A435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28CED01F65CA9800A1A435 /* AppDelegate.swift */; };
 		3D28CED81F65CA9800A1A435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D28CED71F65CA9800A1A435 /* Assets.xcassets */; };
 		3D28CEDB1F65CA9800A1A435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D28CED91F65CA9800A1A435 /* LaunchScreen.storyboard */; };
+		3D28CEE31F65CF0100A1A435 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28CEE21F65CF0100A1A435 /* ViewController.swift */; };
+		3D28CEE71F65D05C00A1A435 /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28CEE41F65D05C00A1A435 /* AppNavigationController.swift */; };
+		3D28CEE81F65D05C00A1A435 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28CEE51F65D05C00A1A435 /* RootViewController.swift */; };
+		3D28CEE91F65D05C00A1A435 /* TransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28CEE61F65D05C00A1A435 /* TransitionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		3D28CED71F65CA9800A1A435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D28CEDA1F65CA9800A1A435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D28CEDC1F65CA9800A1A435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D28CEE21F65CF0100A1A435 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D28CEE41F65D05C00A1A435 /* AppNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
+		3D28CEE51F65D05C00A1A435 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		3D28CEE61F65D05C00A1A435 /* TransitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionViewController.swift; sourceTree = "<group>"; };
 		4AA2430463B6E1262EED41F9 /* Pods_MaterialCosmicMindStudies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaterialCosmicMindStudies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF9C483C671F7B76E5F77D1 /* Pods-MaterialCosmicMindStudies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaterialCosmicMindStudies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MaterialCosmicMindStudies/Pods-MaterialCosmicMindStudies.debug.xcconfig"; sourceTree = "<group>"; };
 		EFF060CB2BD32D42981793C2 /* Pods-MaterialCosmicMindStudies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaterialCosmicMindStudies.release.xcconfig"; path = "Pods/Target Support Files/Pods-MaterialCosmicMindStudies/Pods-MaterialCosmicMindStudies.release.xcconfig"; sourceTree = "<group>"; };
@@ -66,9 +74,13 @@
 			isa = PBXGroup;
 			children = (
 				3D28CED01F65CA9800A1A435 /* AppDelegate.swift */,
+				3D28CEE41F65D05C00A1A435 /* AppNavigationController.swift */,
+				3D28CEE51F65D05C00A1A435 /* RootViewController.swift */,
+				3D28CEE61F65D05C00A1A435 /* TransitionViewController.swift */,
 				3D28CED71F65CA9800A1A435 /* Assets.xcassets */,
 				3D28CED91F65CA9800A1A435 /* LaunchScreen.storyboard */,
 				3D28CEDC1F65CA9800A1A435 /* Info.plist */,
+				3D28CEE21F65CF0100A1A435 /* ViewController.swift */,
 			);
 			path = MaterialCosmicMindStudies;
 			sourceTree = "<group>";
@@ -215,6 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D28CEE71F65D05C00A1A435 /* AppNavigationController.swift in Sources */,
+				3D28CEE31F65CF0100A1A435 /* ViewController.swift in Sources */,
+				3D28CEE81F65D05C00A1A435 /* RootViewController.swift in Sources */,
+				3D28CEE91F65D05C00A1A435 /* TransitionViewController.swift in Sources */,
 				3D28CED11F65CA9800A1A435 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +355,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.closureone.MaterialCosmicMindStudies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -353,6 +370,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.closureone.MaterialCosmicMindStudies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
