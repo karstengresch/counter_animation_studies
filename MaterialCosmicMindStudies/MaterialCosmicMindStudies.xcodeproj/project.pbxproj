@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B4F5A1EA0EBD34A1CE228E2 /* Pods_MaterialCosmicMindStudies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA2430463B6E1262EED41F9 /* Pods_MaterialCosmicMindStudies.framework */; };
 		3D28CED11F65CA9800A1A435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28CED01F65CA9800A1A435 /* AppDelegate.swift */; };
-		3D28CED31F65CA9800A1A435 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28CED21F65CA9800A1A435 /* ViewController.swift */; };
-		3D28CED61F65CA9800A1A435 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D28CED41F65CA9800A1A435 /* Main.storyboard */; };
 		3D28CED81F65CA9800A1A435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D28CED71F65CA9800A1A435 /* Assets.xcassets */; };
 		3D28CEDB1F65CA9800A1A435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D28CED91F65CA9800A1A435 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -17,11 +16,12 @@
 /* Begin PBXFileReference section */
 		3D28CECD1F65CA9800A1A435 /* MaterialCosmicMindStudies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaterialCosmicMindStudies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D28CED01F65CA9800A1A435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3D28CED21F65CA9800A1A435 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3D28CED51F65CA9800A1A435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D28CED71F65CA9800A1A435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D28CEDA1F65CA9800A1A435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D28CEDC1F65CA9800A1A435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AA2430463B6E1262EED41F9 /* Pods_MaterialCosmicMindStudies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaterialCosmicMindStudies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF9C483C671F7B76E5F77D1 /* Pods-MaterialCosmicMindStudies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaterialCosmicMindStudies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MaterialCosmicMindStudies/Pods-MaterialCosmicMindStudies.debug.xcconfig"; sourceTree = "<group>"; };
+		EFF060CB2BD32D42981793C2 /* Pods-MaterialCosmicMindStudies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaterialCosmicMindStudies.release.xcconfig"; path = "Pods/Target Support Files/Pods-MaterialCosmicMindStudies/Pods-MaterialCosmicMindStudies.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +29,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B4F5A1EA0EBD34A1CE228E2 /* Pods_MaterialCosmicMindStudies.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26CACE26C86655861CC99E2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4AA2430463B6E1262EED41F9 /* Pods_MaterialCosmicMindStudies.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3D28CEC41F65CA9800A1A435 = {
 			isa = PBXGroup;
 			children = (
 				3D28CECF1F65CA9800A1A435 /* MaterialCosmicMindStudies */,
 				3D28CECE1F65CA9800A1A435 /* Products */,
+				8BFA4EDE6BF35626CD4CC024 /* Pods */,
+				26CACE26C86655861CC99E2A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +66,20 @@
 			isa = PBXGroup;
 			children = (
 				3D28CED01F65CA9800A1A435 /* AppDelegate.swift */,
-				3D28CED21F65CA9800A1A435 /* ViewController.swift */,
-				3D28CED41F65CA9800A1A435 /* Main.storyboard */,
 				3D28CED71F65CA9800A1A435 /* Assets.xcassets */,
 				3D28CED91F65CA9800A1A435 /* LaunchScreen.storyboard */,
 				3D28CEDC1F65CA9800A1A435 /* Info.plist */,
 			);
 			path = MaterialCosmicMindStudies;
+			sourceTree = "<group>";
+		};
+		8BFA4EDE6BF35626CD4CC024 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ECF9C483C671F7B76E5F77D1 /* Pods-MaterialCosmicMindStudies.debug.xcconfig */,
+				EFF060CB2BD32D42981793C2 /* Pods-MaterialCosmicMindStudies.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +89,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D28CEDF1F65CA9800A1A435 /* Build configuration list for PBXNativeTarget "MaterialCosmicMindStudies" */;
 			buildPhases = (
+				81C49C6FC9BA14CB8B3C3C49 /* [CP] Check Pods Manifest.lock */,
 				3D28CEC91F65CA9800A1A435 /* Sources */,
 				3D28CECA1F65CA9800A1A435 /* Frameworks */,
 				3D28CECB1F65CA9800A1A435 /* Resources */,
+				92E84F88D9F23411AC20A81F /* [CP] Embed Pods Frameworks */,
+				6B38B8C13BB419C2ABA351BD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,18 +147,74 @@
 			files = (
 				3D28CEDB1F65CA9800A1A435 /* LaunchScreen.storyboard in Resources */,
 				3D28CED81F65CA9800A1A435 /* Assets.xcassets in Resources */,
-				3D28CED61F65CA9800A1A435 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B38B8C13BB419C2ABA351BD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaterialCosmicMindStudies/Pods-MaterialCosmicMindStudies-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81C49C6FC9BA14CB8B3C3C49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MaterialCosmicMindStudies-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92E84F88D9F23411AC20A81F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MaterialCosmicMindStudies/Pods-MaterialCosmicMindStudies-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CleanroomLogger/CleanroomLogger.framework",
+				"${BUILT_PRODUCTS_DIR}/Graph/Graph.framework",
+				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CleanroomLogger.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Graph.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MaterialCosmicMindStudies/Pods-MaterialCosmicMindStudies-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3D28CEC91F65CA9800A1A435 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D28CED31F65CA9800A1A435 /* ViewController.swift in Sources */,
 				3D28CED11F65CA9800A1A435 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,14 +222,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3D28CED41F65CA9800A1A435 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3D28CED51F65CA9800A1A435 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3D28CED91F65CA9800A1A435 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -261,6 +330,7 @@
 		};
 		3D28CEE01F65CA9800A1A435 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECF9C483C671F7B76E5F77D1 /* Pods-MaterialCosmicMindStudies.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BD2TPDQG5D;
@@ -274,6 +344,7 @@
 		};
 		3D28CEE11F65CA9800A1A435 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFF060CB2BD32D42981793C2 /* Pods-MaterialCosmicMindStudies.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BD2TPDQG5D;
@@ -304,6 +375,7 @@
 				3D28CEE11F65CA9800A1A435 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
