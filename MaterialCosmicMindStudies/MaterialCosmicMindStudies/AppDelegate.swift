@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     window = UIWindow(frame: Screen.bounds)
     
     // window!.rootViewController = ToolbarController(rootViewController: ViewController()) => of course fully empty
+    window!.rootViewController = AppNavigationController(rootViewController: RootViewController())
     window!.makeKeyAndVisible()
     
     
