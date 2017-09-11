@@ -57,10 +57,12 @@ extension RootViewController {
     
     fileprivate func prepareStarButton() {
         starButton = IconButton(image: Icon.cm.star)
+      
     }
     
     fileprivate func prepareSearchButton() {
         searchButton = IconButton(image: Icon.cm.search)
+        searchButton.addTarget(self, action: #selector(handleSearchButton), for: .touchUpInside)
     }
     
     fileprivate func prepareNavigationItem() {
@@ -83,4 +85,9 @@ extension RootViewController {
     fileprivate func handleNextButton() {
         navigationController?.pushViewController(TransitionViewController(), animated: true)
     }
+  
+  @objc
+  fileprivate func handleSearchButton() {
+    navigationController?.pushViewController(AppSearchBarController(), animated: true)
+  }
 }

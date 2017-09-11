@@ -112,7 +112,6 @@
 				3D28CEE41F65D05C00A1A435 /* AppNavigationController.swift */,
 				3D28CF1A1F66F6B400A1A435 /* photos */,
 				3D28CEE51F65D05C00A1A435 /* RootViewController.swift */,
-				3D28CEFC1F66F69E00A1A435 /* SearchRootController.swift */,
 				3D28CEE61F65D05C00A1A435 /* TransitionViewController.swift */,
 				3D28CED71F65CA9800A1A435 /* Assets.xcassets */,
 				3D28CED91F65CA9800A1A435 /* LaunchScreen.storyboard */,
@@ -149,6 +148,7 @@
 				3D28CF011F66F69E00A1A435 /* UserTableView.swift */,
 				3D28CF021F66F69E00A1A435 /* SampleData.swift */,
 				3D28CEEC1F66F69E00A1A435 /* AppSearchBarController.swift */,
+				3D28CEFC1F66F69E00A1A435 /* SearchRootController.swift */,
 			);
 			name = Search;
 			sourceTree = "<group>";
