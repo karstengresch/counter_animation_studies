@@ -142,5 +142,13 @@ extension SearchRootViewController: SearchBarDelegate {
             self?.tableView.dataSourceItems = dataSourceItems
         }
     }
+  
+  fileprivate func prepareNavigationItem() {
+    navigationItem.title = "Search"
+    navigationItem.detail = "Search, search, search"
+    
+    navigationItem.leftViews = [menuButton]
+    navigationItem.rightViews = [starButton, searchButton]
+  }
 }
 

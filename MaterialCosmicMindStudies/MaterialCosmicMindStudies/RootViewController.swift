@@ -89,6 +89,5 @@ extension RootViewController {
   @objc
   fileprivate func handleSearchButton() {
     navigationController?.pushViewController(AppSearchBarController(rootViewController: SearchRootViewController()), animated: true)
-    
   }
 }
