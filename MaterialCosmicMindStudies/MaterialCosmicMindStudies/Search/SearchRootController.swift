@@ -33,6 +33,7 @@ import Material
 import Graph
 
 class SearchRootViewController: UIViewController {
+    fileprivate var starButton: IconButton!
     // Model.
     internal var graph: Graph!
     internal var search: Search<Entity>!
@@ -47,6 +48,8 @@ class SearchRootViewController: UIViewController {
         // Prepare view.
         prepareSearchBar()
         prepareTableView()
+        prepareStarButton()
+        prepareNavigationItem()
         
         // Prepare model.
         prepareGraph()
@@ -143,12 +146,14 @@ extension SearchRootViewController: SearchBarDelegate {
         }
     }
   
+  fileprivate func prepareStarButton() {
+    starButton = IconButton(image: Icon.cm.star)
+  }
+  
   fileprivate func prepareNavigationItem() {
     navigationItem.title = "Search"
     navigationItem.detail = "Search, search, search"
-    
-    navigationItem.leftViews = [menuButton]
-    navigationItem.rightViews = [starButton, searchButton]
+    navigationItem.rightViews = [starButton]
   }
 }
 
