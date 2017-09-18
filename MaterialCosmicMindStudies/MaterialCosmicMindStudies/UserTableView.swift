@@ -33,54 +33,46 @@ import Material
 import Graph
 
 class UserTableView: TableView {
-    /**
-     Retrieves the data source items for the tableView.
-     - Returns: An Array of DataSourceItem objects.
-     */
-    var dataSourceItems = [DataSourceItem]() {
-        didSet {
-            reloadData()
-        }
+  /**
+   Retrieves the data source items for the tableView.
+   - Returns: An Array of DataSourceItem objects.
+   */
+  var dataSourceItems = [DataSourceItem]() {
+    didSet {
+      reloadData()
     }
-    
-    /// Prepares the tableView.
-    open override func prepare() {
-        super.prepare()
-        dataSource = self
-        delegate = self
-    }
+  }
+  
+  /// Prepares the tableView.
+  open override func prepare() {
+    super.prepare()
+    dataSource = self
+  }
 }
 
 extension UserTableView: TableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataSourceItems.count
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return dataSourceItems.count
+  }
+  
+  func numberOfSections(in tableView: UITableView) -> Int {
+    return 1
+  }
+  
+  /// Prepares the cells within the tableView.
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
+    
+    guard let user = dataSourceItems[indexPath.row].data as? Entity else {
+      return cell
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
+    cell.textLabel?.text = user["name"] as? String
+    cell.imageView?.image = user["photo"] as? UIImage
+    cell.detailTextLabel?.text = user["status"] as? String
+    cell.dividerColor = Color.grey.lighten3
     
-    /// Prepares the cells within the tableView.
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
-        
-        guard let user = dataSourceItems[indexPath.row].data as? Entity else {
-            return cell
-        }
-        
-        cell.textLabel?.text = user["name"] as? String
-        cell.imageView?.image = user["photo"] as? UIImage
-        cell.detailTextLabel?.text = user["status"] as? String
-        cell.dividerColor = Color.grey.lighten3
-        
-        return cell
-    }
+    return cell
+  }
 }
-
-extension UserTableView: TableViewDelegate {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
-    }
-}
-
 

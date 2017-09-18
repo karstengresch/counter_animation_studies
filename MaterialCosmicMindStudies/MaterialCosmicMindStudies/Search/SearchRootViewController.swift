@@ -32,7 +32,7 @@ import UIKit
 import Material
 import Graph
 
-class SearchRootViewController: UIViewController {
+class SearchRootViewController: UIViewController, UITableViewDelegate {
     fileprivate var starButton: IconButton!
     // Model.
     internal var graph: Graph!
@@ -43,17 +43,19 @@ class SearchRootViewController: UIViewController {
     
     open override func viewDidLoad() {
         super.viewDidLoad()
+        print("Loading search view!")
         view.backgroundColor = Color.grey.lighten5
-        
+        prepareTableView()
+      
         // Prepare view.
         prepareSearchBar()
-        prepareTableView()
+
         prepareStarButton()
         prepareNavigationItem()
-        
         // Prepare model.
         prepareGraph()
         prepareSearch()
+
     }
     
     override func viewWillLayoutSubviews() {
@@ -68,7 +70,7 @@ extension SearchRootViewController  {
         graph = Graph()
         
         // Uncomment to clear the Graph data.
-//        graph.clear()
+        graph.clear()
     }
     
     internal func prepareSearch() {
@@ -77,6 +79,7 @@ extension SearchRootViewController  {
         search.async { [weak self] (data) in
             if 0 == data.count {
                 SampleData.createSampleData()
+              print("Sample data created")
             }
             self?.reloadData()
         }
@@ -84,11 +87,13 @@ extension SearchRootViewController  {
     
     internal func prepareTableView() {
         tableView = UserTableView()
+        tableView.delegate = self
         view.layout(tableView).edges()
     }
     
     internal func reloadData() {
-        var dataSourceItems = [DataSourceItem]()
+      print("Reload data (method)")
+        var userData = [DataSourceItem]()
         
         let users = search.sync().sorted(by: { (a, b) -> Bool in
             guard let n = a["name"] as? String, let m = b["name"] as? String else {
@@ -99,10 +104,11 @@ extension SearchRootViewController  {
         })
             
         users.forEach {
-            dataSourceItems.append(DataSourceItem(data: $0))
+            userData.append(DataSourceItem(data: $0))
         }
         
-        tableView.dataSourceItems = dataSourceItems
+        tableView.dataSourceItems = userData
+      
     }
 }
 
@@ -131,18 +137,19 @@ extension SearchRootViewController: SearchBarDelegate {
                 return
             }
             
-            var dataSourceItems = [DataSourceItem]()
+            var userData = [DataSourceItem]()
             
             for user in users {
                 if let name = user["name"] as? String {
                     let matches = regex.matches(in: name, range: NSRange(location: 0, length: name.utf16.count))
                     if 0 < matches.count {
-                        dataSourceItems.append(DataSourceItem(data: user))
+                        userData.append(DataSourceItem(data: user))
                     }
                 }
             }
             
-            self?.tableView.dataSourceItems = dataSourceItems
+            self?.tableView.dataSourceItems = userData
+          
         }
     }
   
@@ -155,5 +162,15 @@ extension SearchRootViewController: SearchBarDelegate {
     navigationItem.detail = "Search, search, search"
     navigationItem.rightViews = [starButton]
   }
+}
+
+extension SearchRootViewController: TableViewDelegate {
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    return 80
+  }
+  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    navigationController?.pushViewController(PersonRootViewController(), animated: true)
+}
 }
 

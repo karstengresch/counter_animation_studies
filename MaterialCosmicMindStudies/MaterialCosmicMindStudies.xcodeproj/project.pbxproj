@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1B4F5A1EA0EBD34A1CE228E2 /* Pods_MaterialCosmicMindStudies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA2430463B6E1262EED41F9 /* Pods_MaterialCosmicMindStudies.framework */; };
+		3D1B110E1F6FD26B008DE8D5 /* PersonRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B110D1F6FD26B008DE8D5 /* PersonRootViewController.swift */; };
 		3D28CED11F65CA9800A1A435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28CED01F65CA9800A1A435 /* AppDelegate.swift */; };
 		3D28CED81F65CA9800A1A435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D28CED71F65CA9800A1A435 /* Assets.xcassets */; };
 		3D28CEDB1F65CA9800A1A435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D28CED91F65CA9800A1A435 /* LaunchScreen.storyboard */; };
@@ -28,13 +29,14 @@
 		3D28CF101F66F69E00A1A435 /* kendall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D28CEF91F66F69E00A1A435 /* kendall.jpg */; };
 		3D28CF111F66F69E00A1A435 /* laura.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D28CEFA1F66F69E00A1A435 /* laura.jpg */; };
 		3D28CF121F66F69E00A1A435 /* michael.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D28CEFB1F66F69E00A1A435 /* michael.jpg */; };
-		3D28CF131F66F69E00A1A435 /* SearchRootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28CEFC1F66F69E00A1A435 /* SearchRootController.swift */; };
+		3D28CF131F66F69E00A1A435 /* SearchRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28CEFC1F66F69E00A1A435 /* SearchRootViewController.swift */; };
 		3D28CF151F66F69E00A1A435 /* thomas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D28CEFE1F66F69E00A1A435 /* thomas.jpg */; };
 		3D28CF181F66F69E00A1A435 /* UserTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28CF011F66F69E00A1A435 /* UserTableView.swift */; };
 		3D28CF191F66F69E00A1A435 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28CF021F66F69E00A1A435 /* SampleData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D1B110D1F6FD26B008DE8D5 /* PersonRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonRootViewController.swift; sourceTree = "<group>"; };
 		3D28CECD1F65CA9800A1A435 /* MaterialCosmicMindStudies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaterialCosmicMindStudies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D28CED01F65CA9800A1A435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D28CED71F65CA9800A1A435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,7 +59,7 @@
 		3D28CEF91F66F69E00A1A435 /* kendall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kendall.jpg; sourceTree = "<group>"; };
 		3D28CEFA1F66F69E00A1A435 /* laura.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = laura.jpg; sourceTree = "<group>"; };
 		3D28CEFB1F66F69E00A1A435 /* michael.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = michael.jpg; sourceTree = "<group>"; };
-		3D28CEFC1F66F69E00A1A435 /* SearchRootController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchRootController.swift; path = Search/SearchRootController.swift; sourceTree = "<group>"; };
+		3D28CEFC1F66F69E00A1A435 /* SearchRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchRootViewController.swift; path = Search/SearchRootViewController.swift; sourceTree = "<group>"; };
 		3D28CEFE1F66F69E00A1A435 /* thomas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thomas.jpg; sourceTree = "<group>"; };
 		3D28CF011F66F69E00A1A435 /* UserTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableView.swift; sourceTree = "<group>"; };
 		3D28CF021F66F69E00A1A435 /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
@@ -86,6 +88,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3D1B110C1F6FD020008DE8D5 /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				3D1B110D1F6FD26B008DE8D5 /* PersonRootViewController.swift */,
+			);
+			name = Person;
+			sourceTree = "<group>";
+		};
 		3D28CEC41F65CA9800A1A435 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +117,7 @@
 		3D28CECF1F65CA9800A1A435 /* MaterialCosmicMindStudies */ = {
 			isa = PBXGroup;
 			children = (
+				3D1B110C1F6FD020008DE8D5 /* Person */,
 				3D28CED01F65CA9800A1A435 /* AppDelegate.swift */,
 				3D28CF1B1F66F74400A1A435 /* Search */,
 				3D28CEE41F65D05C00A1A435 /* AppNavigationController.swift */,
@@ -148,7 +159,7 @@
 				3D28CF011F66F69E00A1A435 /* UserTableView.swift */,
 				3D28CF021F66F69E00A1A435 /* SampleData.swift */,
 				3D28CEEC1F66F69E00A1A435 /* AppSearchBarController.swift */,
-				3D28CEFC1F66F69E00A1A435 /* SearchRootController.swift */,
+				3D28CEFC1F66F69E00A1A435 /* SearchRootViewController.swift */,
 			);
 			name = Search;
 			sourceTree = "<group>";
@@ -315,7 +326,8 @@
 				3D28CEE81F65D05C00A1A435 /* RootViewController.swift in Sources */,
 				3D28CF191F66F69E00A1A435 /* SampleData.swift in Sources */,
 				3D28CEE91F65D05C00A1A435 /* TransitionViewController.swift in Sources */,
-				3D28CF131F66F69E00A1A435 /* SearchRootController.swift in Sources */,
+				3D1B110E1F6FD26B008DE8D5 /* PersonRootViewController.swift in Sources */,
+				3D28CF131F66F69E00A1A435 /* SearchRootViewController.swift in Sources */,
 				3D28CED11F65CA9800A1A435 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
